@@ -22,6 +22,9 @@ public class MusteriHizmetleriController : Controller
         return View();
     }
 
-    
+    public IActionResult SiparişDurumu()
+    {
+        return View();
+    }
 }
 
