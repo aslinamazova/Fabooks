@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="1591" Column="49" />
+      <File FileName="WebMVC/Views/MusteriHizmetleri/MesafeliSatışSözleşmesi.cshtml" Line="19" Column="1615" />
+      <File FileName="WebMVC/Views/Home/Index.cshtml" Line="10" Column="1" />
+      <File FileName="WebMVC/Program.cs" Line="40" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fabooks" expanded="True">
+            <Node name="Entities" expanded="True" />
+            <Node name="WebMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="MusteriHizmetleri" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

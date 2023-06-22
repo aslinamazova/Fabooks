@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebMVC
+build_property.RootNamespace = WebMVC
+build_property.ProjectDir = /Users/eslinamazova/Desktop/Fabooks/WebMVC/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/eslinamazova/Desktop/Fabooks/WebMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/MusteriHizmetleri/GizlilikSözleşmesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzdGVyaUhpem1ldGxlcmkvR2l6bGlsaWtTw7Z6bGXFn21lc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/MusteriHizmetleri/KargoTeslimatKoşulları.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzdGVyaUhpem1ldGxlcmkvS2FyZ29UZXNsaW1hdEtvxZ91bGxhcsSxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/MusteriHizmetleri/MesafeliSatışSözleşmesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzdGVyaUhpem1ldGxlcmkvTWVzYWZlbGlTYXTEscWfU8O2emxlxZ9tZXNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hfo96tx0bd

@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="WebMVC/Controllers/HomeController.cs" />
+      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="326" Column="29" />
+      <File FileName="WebMVC/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="WebMVC/Views/_ViewImports.cshtml" />
+      <File FileName="WebMVC/Views/_ViewStart.cshtml" />
+      <File FileName="WebMVC/appsettings.json" />
+      <File FileName="WebMVC/Program.cs" />
+      <File FileName="WebMVC/Properties/launchSettings.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Doodle" expanded="True">
+            <Node name="WebMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
