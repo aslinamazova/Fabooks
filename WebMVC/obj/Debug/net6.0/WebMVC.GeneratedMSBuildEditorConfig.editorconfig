@@ -16,8 +16,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/eslinamazova/Desktop/Fabooks/WebMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hakkimizda/BizKimiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFra2ltaXpkYS9CaXpLaW1pei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hakkimizda/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFra2ltaXpkYS9CbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hakkimizda/İletişim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFra2ltaXpkYS/EsGxldGnFn2ltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Annemİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0FubmVtxLDDp2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Arkadaşımİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0Fya2FkYcWfxLFtxLDDp2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Babamİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0JhYmFtxLDDp2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Kardeşimİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0thcmRlxZ9pbcSww6dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Sevgililerİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL1NldmdpbGlsZXLEsMOnaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Çocuğumİçin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL8OHb2N1xJ91bcSww6dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Ajandalar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9BamFuZGFsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Defterler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9EZWZ0ZXJsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Günlükler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9Hw7xubMO8a2xlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Planlayıcılar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9QbGFubGF5xLFjxLFsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Posterler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9Qb3N0ZXJsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Takvimler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9UYWt2aW1sZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/MusteriHizmetleri/GizlilikSözleşmesi.cshtml]

@@ -20,8 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\MusteriHizmetleri\" />
+    <None Remove="Views\Hakkimizda\" />
+    <None Remove="Views\Mağaza\" />
+    <None Remove="Views\Hediyeler\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
+    <Folder Include="Views\Hakkimizda\" />
+    <Folder Include="Views\Mağaza\" />
+    <Folder Include="Views\Hediyeler\" />
   </ItemGroup>
 </Project>

@@ -1628,7 +1628,7 @@
                                                                     <div class="wpb_wrapper">
                                                                         <div class="wpb_text_column wpb_content_element">
                                                                             <div class="wpb_wrapper">
-                                                                                <p><span class="sub-cat"><a title="Planlayıcılar" href="kategori/planners/index.html">Tüm Planlayıcılar</a></span> <span class="sub-cat"><a title="Ajandalar ve Planlayıcılar" href="kategori/ajandalar-ve-planlayicilar/index.html">Ajandalar ve Planlayıcılar</a></span> <span class="sub-cat"><a title="Bloknotlar" href="kategori/bloknotlar/index.html">Bloknotlar</a></span></p>
+                                                                                <p><span class="sub-cat"><a title="Planlayıcılar" asp-controller="Mağaza" asp-action="Planlayıcılar">Tüm Planlayıcılar</a></span> <span class="sub-cat"><a title="Ajandalar ve Planlayıcılar" asp-controller="Mağaza" asp-action="Ajandalar">Ajandalar ve Planlayıcılar</a></span> <span class="sub-cat"><a title="Bloknotlar" href="kategori/bloknotlar/index.html">Bloknotlar</a></span></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1708,9 +1708,9 @@
                         <div id="text-16" class="woodmart-widget widget footer-widget  widget_text">
                             <h5 class="widget-title">Hakkımızda</h5>			<div class="textwidget">
                                 <ul class="menu">
-                                    <li><a title="Biz Kimiz?" href="biz-kimiz/index.html">Biz Kimiz?</a></li>
-                                    <li><a title="Blog" href="blog/index.html">Blog</a></li>
-                                    <li><a title="İletişim" href="iletisim/index.html">İletişim</a></li>
+                                    <li><a title="Biz Kimiz?" asp-controller="Hakkimizda" asp-action="BizKimiz">Biz Kimiz?</a></li>
+                                    <li><a title="Blog" asp-controller="Hakkimizda" asp-action="Blog">Blog</a></li>
+                                    <li><a title="İletişim" asp-controller="Hakkimizda" asp-action="İletişim">İletişim</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1719,8 +1719,8 @@
                         <div id="text-14" class="woodmart-widget widget footer-widget  widget_text">
                             <h5 class="widget-title">Mağaza</h5>			<div class="textwidget">
                                 <ul class="menu">
-                                    <li><a href="kategori/planners/index.html" title="Planlayıcılar">Planlayıcılar</a></li>
-                                    <li><a href="kategori/ajandalar-ve-planlayicilar/index.html" title="Ajandalar">Ajandalar</a></li>
+                                    <li><a asp-controller="Mağaza" asp-action="Planlayıcılar" title="Planlayıcılar">Planlayıcılar</a></li>
+                                    <li><a asp-controller="Mağaza" asp-action="Ajandalar" title="Ajandalar">Ajandalar</a></li>
                                     <li><a href="kategori/posterler/index.html" title="Posterler">Posterler</a></li>
                                     <li><a href="kategori/takvimler/index.html" title="Takvimler">Takvimler</a></li>
                                     <li><a href="kategori/journalsgunlukler/index.html" title="Günlükler">Günlükler</a></li>
@@ -2207,5 +2207,4 @@
     </div>
 </body>
 
-<!-- Mirrored from fabooks.com.tr/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 16:44:34 GMT -->
 </html>
