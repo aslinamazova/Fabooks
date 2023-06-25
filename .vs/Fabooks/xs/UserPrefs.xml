@@ -1,28 +1,18 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="1609" Column="1" />
-      <File FileName="WebMVC/Views/MusteriHizmetleri/MesafeliSatışSözleşmesi.cshtml" />
-      <File FileName="WebMVC/Views/Home/Index.cshtml" />
-      <File FileName="WebMVC/Views/MusteriHizmetleri/GizlilikSözleşmesi.cshtml" />
-      <File FileName="WebMVC/Views/MusteriHizmetleri/KargoTeslimatKoşulları.cshtml" />
+      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="1670" Column="253" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Fabooks" expanded="True">
-            <Node name="Entities" expanded="True" />
             <Node name="WebMVC" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="MusteriHizmetleri" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True" />
                 </Node>
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="assets" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -32,7 +22,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

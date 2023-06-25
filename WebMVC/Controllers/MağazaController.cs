@@ -43,6 +43,11 @@ namespace WebMVC.Controllers
         {
             return View();
         }
+        public IActionResult Outlet()
+        {
+            return View();
+        }
+
     }
 }
 

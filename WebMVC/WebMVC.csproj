@@ -23,11 +23,23 @@
     <None Remove="Views\Hakkimizda\" />
     <None Remove="Views\Mağaza\" />
     <None Remove="Views\Hediyeler\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
     <Folder Include="Views\Hakkimizda\" />
     <Folder Include="Views\Mağaza\" />
     <Folder Include="Views\Hediyeler\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\admin\" />
   </ItemGroup>
 </Project>

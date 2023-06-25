@@ -22,6 +22,10 @@ public class HakkimizdaController : Controller
     {
         return View();
     }
-
+    public IActionResult BizimleÇalışın()
+    {
+        return View();
+    }
+   
 }
 
