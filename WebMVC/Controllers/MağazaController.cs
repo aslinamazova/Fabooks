@@ -34,6 +34,15 @@ namespace WebMVC.Controllers
         {
             return View();
         }
+        public IActionResult Bloknotlar()
+        {
+            return View();
+        }
+
+        public IActionResult Yeni()
+        {
+            return View();
+        }
     }
 }
 

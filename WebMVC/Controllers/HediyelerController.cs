@@ -21,19 +21,19 @@ namespace WebMVC.Controllers
         {
             return View();
         }
-        public IActionResult Çocuğumİçin()
-        {
-            return View();
-        }
-        public IActionResult Kardeşimİçin()
-        {
-            return View();
-        }
+       
         public IActionResult Sevgililerİçin()
         {
             return View();
         }
-
+        public IActionResult TümHediyeler()
+        {
+            return View();
+        }
+        public IActionResult Eglencemotivasyon()
+        {
+            return View();
+        }
     }
 }
 

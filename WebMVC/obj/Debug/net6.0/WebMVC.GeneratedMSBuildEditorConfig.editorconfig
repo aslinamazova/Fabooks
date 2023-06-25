@@ -40,16 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0JhYmFtxLDDp2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Kardeşimİçin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0thcmRlxZ9pbcSww6dpbi5jc2h0bWw=
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Eglencemotivasyon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL0VnbGVuY2Vtb3RpdmFzeW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Sevgililerİçin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL1NldmdpbGlsZXLEsMOnaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/Çocuğumİçin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL8OHb2N1xJ91bcSww6dpbi5jc2h0bWw=
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hediyeler/TümHediyeler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVkaXllbGVyL1TDvG1IZWRpeWVsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Home/Index.cshtml]
@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Ajandalar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9BamFuZGFsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Bloknotlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9CbG9rbm90bGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Defterler.cshtml]
@@ -78,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Takvimler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9UYWt2aW1sZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Yeni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9ZZW5pLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/MusteriHizmetleri/GizlilikSözleşmesi.cshtml]
