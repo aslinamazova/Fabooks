@@ -28,6 +28,7 @@
     <None Remove="Areas\Admin\Controllers\" />
     <None Remove="Areas\Admin\Views\" />
     <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
@@ -40,6 +41,7 @@
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />

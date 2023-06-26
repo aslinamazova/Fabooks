@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/eslinamazova/Desktop/Fabooks/WebMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Hakkimizda/BizimleÇalışın.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGFra2ltaXpkYS9CaXppbWxlw4dhbMSxxZ/EsW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

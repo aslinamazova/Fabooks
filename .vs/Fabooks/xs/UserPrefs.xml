@@ -1,10 +1,13 @@
-﻿<Properties StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default" GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
   <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="1659" Column="79" />
+      <File FileName="WebMVC/Views/Shared/_Layout.cshtml" Line="1656" Column="33" />
+      <File FileName="WebMVC/Areas/Admin/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="WebMVC/Areas/Admin/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml" Line="4" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +17,9 @@
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Shared" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Views" expanded="True">
@@ -26,8 +31,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
