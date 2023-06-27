@@ -9,6 +9,7 @@
       "WebMVC/1.0.0": {
         "dependencies": {
           "DataAccess": "1.0.0",
+          "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.16"
         },
         "runtime": {

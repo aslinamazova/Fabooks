@@ -219,6 +219,9 @@
             "projectReferences": {
               "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj": {
                 "projectPath": "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj"
+              },
+              "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj": {
+                "projectPath": "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj"
               }
             }
           }

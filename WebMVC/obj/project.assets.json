@@ -2199,6 +2199,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "DataAccess >= 1.0.0",
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.16"
     ]
   },
@@ -2231,6 +2232,9 @@
           "projectReferences": {
             "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj": {
               "projectPath": "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj"
+            },
+            "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj": {
+              "projectPath": "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj"
             }
           }
         }
