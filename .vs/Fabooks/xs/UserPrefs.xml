@@ -1,43 +1,48 @@
-﻿<Properties StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Entities/Category.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entities/Account/AppUser.cs">
     <Files>
       <File FileName="WebMVC/Views/Shared/_Layout.cshtml" />
       <File FileName="WebMVC/Areas/Admin/Views/_ViewImports.cshtml" />
       <File FileName="WebMVC/Areas/Admin/Views/_ViewStart.cshtml" />
-      <File FileName="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml" Line="11" Column="11" />
-      <File FileName="Entities/Product.cs" Line="1" Column="1" />
-      <File FileName="Entities/Common/BaseAuditibleEntity.cs" Line="8" Column="15" />
-      <File FileName="Entities/Common/BaseEntity.cs" Line="7" Column="14" />
-      <File FileName="Entities/Category.cs" Line="12" Column="51" />
+      <File FileName="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml" />
+      <File FileName="Entities/Product.cs" Line="34" Column="1" />
+      <File FileName="Entities/Common/BaseAuditibleEntity.cs" Line="10" Column="1" />
+      <File FileName="Entities/Common/BaseEntity.cs" Line="9" Column="2" />
+      <File FileName="Entities/Category.cs" Line="21" Column="1" />
+      <File FileName="Entities/Image.cs" Line="18" Column="1" />
+      <File FileName="WebMVC/Views/Home/Index.cshtml" Line="311" Column="58" />
+      <File FileName="WebMVC/Views/Home/Urun.cshtml" Line="33" Column="1285" />
+      <File FileName="WebMVC/Views/Mağaza/Planlayıcılar.cshtml" Line="1459" Column="88" />
+      <File FileName="WebMVC/Controllers/ProductsController.cs" Line="5" Column="1" />
+      <File FileName="Entities/Order.cs" Line="5" Column="1" />
+      <File FileName="Core/Entities/Account/AppUser.cs" Line="2" Column="1" />
+      <File FileName="Core/DataAccess/Repositories/Concrete/EFCore/EFBaseRepository.cs" Line="1" Column="1" />
+      <File FileName="Core/DataAccess/Repositories/Abstract/IRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Fabooks" expanded="True">
-            <Node name="Entities" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Category.cs" selected="True" />
+            <Node name="Core">
+              <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="WebMVC" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Shared" expanded="True" />
-                  </Node>
-                </Node>
+            <Node name="Entities">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Account" expanded="True" />
+              <Node name="Common" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using Entities.Common;
 
 namespace Entities;
@@ -11,8 +12,17 @@ public class Category : BaseAuditibleEntity
     [Required,MaxLength(255)]
     public string Description { get; set; }
 
-    public bool IsDeleted { get; set; } = default;
+    [DefaultValue(false)]
+    public bool IsDeleted { get; set; }
+
     public bool IsActive { get; set; }
+
     public List<Product>? Products { get; set; }
+
+    public Category()
+    {
+        Products = new List<Product>();
+    }
+
 }
 

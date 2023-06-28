@@ -32,6 +32,7 @@
     <None Remove="Areas\Admin\Views\" />
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Views\Account\" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
@@ -45,6 +46,7 @@
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />

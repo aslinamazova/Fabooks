@@ -6429,6 +6429,14 @@
       "PackagePath": "staticwebassets/assets/wp-content/plugins/wpcf7-redirect/build/js/wpcf7r-fe4963.js"
     },
     {
+      "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/themes/.DS_Store",
+      "PackagePath": "staticwebassets/assets/wp-content/themes/.DS_Store"
+    },
+    {
+      "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/themes/woodmart/.DS_Store",
+      "PackagePath": "staticwebassets/assets/wp-content/themes/woodmart/.DS_Store"
+    },
+    {
       "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/themes/woodmart/css/bootstrap.min474a.css",
       "PackagePath": "staticwebassets/assets/wp-content/themes/woodmart/css/bootstrap.min474a.css"
     },
@@ -7851,6 +7859,10 @@
     {
       "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/uploads/2020/12/trendyoltoplu.jpg",
       "PackagePath": "staticwebassets/assets/wp-content/uploads/2020/12/trendyoltoplu.jpg"
+    },
+    {
+      "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/uploads/2021/.DS_Store",
+      "PackagePath": "staticwebassets/assets/wp-content/uploads/2021/.DS_Store"
     },
     {
       "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/assets/wp-content/uploads/2021/01/1-copy.jpg",

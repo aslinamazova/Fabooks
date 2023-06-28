@@ -80,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Home/Urun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9VcnVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Ajandalar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9BamFuZGFsYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,10 +114,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Takvimler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9UYWt2aW1sZXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/TümÜrünler.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWHEn2F6YS9Uw7xtw5xyw7xubGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/eslinamazova/Desktop/Fabooks/WebMVC/Views/Mağaza/Yeni.cshtml]

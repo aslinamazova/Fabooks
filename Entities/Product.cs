@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using Entities.Common;
 
 namespace Entities;
@@ -16,15 +17,27 @@ public class Product : BaseAuditibleEntity
 
     public int Stock { get; set; }
 
-    public bool IsDeleted { get; set; } = default;
+    [DefaultValue(false)]
+    public bool IsDeleted { get; set; } 
+
     public bool IsActive { get; set; }
+
     [Required]
     public int CategoryId { get; set; }
 
-    public Category Category { get; set; }
+    public Category? Category { get; set; }
 
-    public ICollection<Image>? Images { get; set; }
+    public decimal? Discount { get; set; }
 
-    public string UserId { get; set; }
+    public string? UserId { get; set; }
+
+    public List<ProductImage> ProductImages { get; set; }
+
+
+    public Product()
+    {
+        ProductImages = new List<ProductImage>();
+    }
+
 }
 
