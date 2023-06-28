@@ -12,7 +12,7 @@ public class Product : BaseAuditibleEntity
     [Required]
     public decimal Price { get; set; }
 
-    [Required, MaxLength(255)]
+    [Required]
     public string Description { get; set; }
 
     public int Stock { get; set; }
@@ -31,12 +31,12 @@ public class Product : BaseAuditibleEntity
 
     public string? UserId { get; set; }
 
-    public List<ProductImage> ProductImages { get; set; }
+    public List<ProductImage> ProductImage { get; set; }
 
 
     public Product()
     {
-        ProductImages = new List<ProductImage>();
+        ProductImage = new List<ProductImage>();
     }
 
 }

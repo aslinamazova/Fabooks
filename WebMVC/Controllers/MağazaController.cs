@@ -43,10 +43,6 @@ public class MağazaController : Controller
         return View();
     }
 
-    public IActionResult TümÜrünler()
-    {
-        return View();
-    }
     
 }
 
