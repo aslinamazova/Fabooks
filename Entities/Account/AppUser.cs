@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Identity;
-
-namespace Entities.Account;
+﻿namespace Entities.Account;
 
 public class AppUser : IdentityUser
 {

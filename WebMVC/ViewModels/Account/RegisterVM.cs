@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebMVC.ViewModels.Account
 {
-	public class RegisterVM
+    public class RegisterVM
 	{
         [Required, MaxLength(255), DataType(DataType.EmailAddress)]
         public string Email { get; set; }

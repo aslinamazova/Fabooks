@@ -1,8 +1,4 @@
-﻿using System;
-using Entities.Account;
-using Entities.Common;
-
-namespace Entities;
+﻿namespace Entities;
 
 public class Cart : BaseAuditibleEntity
 {

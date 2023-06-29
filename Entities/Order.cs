@@ -1,11 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using Entities.Account;
-using Entities.Common;
-
-namespace Entities
+﻿namespace Entities
 {
-	public class Order:BaseAuditibleEntity
+    public class Order:BaseAuditibleEntity
 	{
         public string UserId { get; set; }
         public int ProductId { get; set; }

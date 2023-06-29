@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebMVC.ViewModels.Account
 {
-	public class LoginVM
+    public class LoginVM
 	{
         [Required, DataType(DataType.EmailAddress)]
         public string Email { get; set; }

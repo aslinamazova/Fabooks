@@ -1,8 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using Entities.Common;
-
-namespace Entities;
+﻿namespace Entities;
 
 public class Category : BaseAuditibleEntity
 {
@@ -19,9 +15,12 @@ public class Category : BaseAuditibleEntity
 
     public List<Product>? Products { get; set; }
 
+    public List<ProductCategory>? ProductCategories { get; set; }
+
     public Category()
     {
         Products = new List<Product>();
+        ProductCategories = new List<ProductCategory>();
     }
 
 }

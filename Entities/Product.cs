@@ -1,8 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using Entities.Common;
-
-namespace Entities;
+﻿namespace Entities;
 
 public class Product : BaseAuditibleEntity
 {
@@ -27,16 +23,23 @@ public class Product : BaseAuditibleEntity
 
     public Category? Category { get; set; }
 
-    public decimal? Discount { get; set; }
+    public decimal? DiscountPercent { get; set; }
+
+    public decimal? DiscountedPrice { get; set; }
 
     public string? UserId { get; set; }
 
     public List<ProductImage> ProductImage { get; set; }
 
+    public List<Category>? Categories { get; set; }
+
+    public List <ProductCategory>? ProductCategories { get; set; }
 
     public Product()
     {
         ProductImage = new List<ProductImage>();
+        Categories = new List<Category>();
+        ProductCategories = new List<ProductCategory>();
     }
 
 }

@@ -19,7 +19,7 @@ public class HomeController : Controller
     {
         List<Product> products = await _dbContext.Products
             .Where(p => !p.IsDeleted)
-            .OrderByDescending(s => s.Id)
+            .OrderByDescending(p => p.Id)
             .Take(take)
             .Include(p => p.Category)
             .Include(p => p.ProductImage)
@@ -27,13 +27,13 @@ public class HomeController : Controller
         
         foreach (var product in products)
         {
-            product.Discount = ApplyDiscount(product.Price, (decimal)product.Discount);
+            product.DiscountedPrice = ApplyDiscount(product.Price, (decimal)product.DiscountPercent);
         }
         return View(products);
     }
-    private decimal ApplyDiscount(decimal price, decimal discount)
+    private decimal ApplyDiscount(decimal price, decimal discountpercent)
     {
-        decimal discountedPrice = price - (price * (discount / 100));
+        decimal discountedPrice = price - (price * (discountpercent / 100));
         return discountedPrice;
     }
 

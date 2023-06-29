@@ -1,10 +1,4 @@
-﻿using DataAccess.Repositories.Concrete.EFCore;
-using Entities.Account;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace DataAccess;
+﻿namespace DataAccess;
 
 public static  class ConfigurationServices
 {

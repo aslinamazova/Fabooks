@@ -19,7 +19,7 @@ public class AboutController : Controller
     {
         Product? product = await _context.Products
                                             .Where(p => p.Id == id)
-                                            .Include(p => p.Category)
+                                            .Include(p => p.Categories)
                                             .Include(p => p.ProductImage)
                                             .FirstOrDefaultAsync();
         if (product == null) return RedirectToAction("Index","Home");

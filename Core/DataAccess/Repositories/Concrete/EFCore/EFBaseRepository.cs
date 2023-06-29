@@ -1,6 +1,5 @@
 ﻿using Core.DataAccess.Repositories.Abstract;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace Core.DataAccess.Repositories.Concrete.EFCore;

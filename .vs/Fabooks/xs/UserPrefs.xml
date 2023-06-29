@@ -1,48 +1,99 @@
-﻿<Properties StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Program.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{360C1CC7-0B5A-41E4-899C-510074F36DC8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebMVC/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="Entities/Product.cs" />
-      <File FileName="Entities/Common/BaseAuditibleEntity.cs" />
-      <File FileName="Entities/Common/BaseEntity.cs" />
-      <File FileName="Entities/Category.cs" />
-      <File FileName="WebMVC/Views/Home/Index.cshtml" />
-      <File FileName="Entities/Order.cs" />
-      <File FileName="Entities/Account/AppUser.cs" />
-      <File FileName="Entities/Cart.cs" />
-      <File FileName="Entities/CartItem.cs" />
-      <File FileName="WebMVC/Controllers/AboutController.cs" Line="21" Column="22" />
-      <File FileName="WebMVC/Controllers/HomeController.cs" />
-      <File FileName="WebMVC/Program.cs" Line="29" Column="24" />
+      <File FileName="Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="Entities/Common/BaseAuditibleEntity.cs" Line="1" Column="1" />
+      <File FileName="Entities/Common/BaseEntity.cs" Line="1" Column="1" />
+      <File FileName="Entities/Category.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Views/Home/Index.cshtml" Line="322" Column="349" />
+      <File FileName="Entities/Order.cs" Line="1" Column="1" />
+      <File FileName="Entities/Account/AppUser.cs" Line="1" Column="1" />
+      <File FileName="Entities/Cart.cs" Line="1" Column="1" />
+      <File FileName="Entities/CartItem.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Controllers/AboutController.cs" Line="22" Column="72" />
+      <File FileName="WebMVC/Controllers/HomeController.cs" Line="33" Column="6" />
+      <File FileName="WebMVC/Program.cs" Line="30" Column="15" />
       <File FileName="WebMVC/appsettings.json" />
-      <File FileName="DataAccess/AppDbContext.cs" />
-      <File FileName="WebMVC/Controllers/MağazaController.cs" />
-      <File FileName="WebMVC/Controllers/MusteriHizmetleriController.cs" />
-      <File FileName="Entities/ProductImage.cs" />
-      <File FileName="WebMVC/Controllers/BasketController.cs" Line="1" Column="1" />
-      <File FileName="WebMVC/Controllers/AccountController.cs" Line="1" Column="1" />
-      <File FileName="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml" />
-      <File FileName="WebMVC/Areas/Admin/Views/Dashboard/Index.cshtml" Line="1" Column="1" />
+      <File FileName="DataAccess/AppDbContext.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Controllers/MağazaController.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Controllers/MusteriHizmetleriController.cs" Line="1" Column="7" />
+      <File FileName="Entities/ProductImage.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Controllers/BasketController.cs" Line="11" Column="49" />
+      <File FileName="WebMVC/Controllers/AccountController.cs" Line="31" Column="14" />
+      <File FileName="WebMVC/Areas/Admin/Controllers/DashboardController.cs" Line="15" Column="1" />
       <File FileName="WebMVC/Areas/Admin/Views/_ViewImports.cshtml" />
       <File FileName="WebMVC/Areas/Admin/Views/_ViewStart.cshtml" />
+      <File FileName="WebMVC/Areas/Admin/Views/Shared/_Layout.cshtml" />
+      <File FileName="WebMVC/Areas/Admin/Views/Dashboard/Index.cshtml" Line="306" Column="1" />
+      <File FileName="DataAccess/Usings.cs" Line="14" Column="1" />
+      <File FileName="DataAccess/ConfigurationServices.cs" Line="1" Column="1" />
+      <File FileName="Business/ConfigurationService.cs" Line="1" Column="1" />
+      <File FileName="Business/Utilities/Constants/ExceptionMessages.cs" Line="1" Column="1" />
+      <File FileName="Business/Utilities/Profiles/ProductProfile.cs" Line="1" Column="1" />
+      <File FileName="Business/Services/Abstract/IProductService.cs" Line="1" Column="1" />
+      <File FileName="Business/Services/Concrete/ProductService.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Exceptions/AlreadyIsExistsException.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Exceptions/NotFoundException.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/DataResult.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/ErrorDataResult.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/ErrorResult.cs" />
+      <File FileName="Core/Utilities/Results/IDataResult.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/IResult.cs" />
+      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" />
+      <File FileName="Core/Utilities/Results/Result.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/SuccessResult.cs" />
+      <File FileName="Core/DataAccess/Repositories/Abstract/IRepository.cs" Line="1" Column="1" />
+      <File FileName="Core/DataAccess/Repositories/Concrete/EFCore/EFBaseRepository.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Views/_ViewImports.cshtml" />
+      <File FileName="WebMVC/Views/_ViewStart.cshtml" />
+      <File FileName="WebMVC/ViewModels/Account/RegisterVM.cs" Line="1" Column="5" />
+      <File FileName="WebMVC/ViewModels/Account/LoginVM.cs" Line="1" Column="5" />
+      <File FileName="WebMVC/ViewModels/Basket/BasketItemVM.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/ViewModels/Basket/BasketItemDetailVM.cs" Line="1" Column="1" />
+      <File FileName="WebMVC/Views/Account/Login.cshtml" Line="1277" Column="79" />
+      <File FileName="WebMVC/Views/Account/Register.cshtml" Line="1268" Column="82" />
+      <File FileName="WebMVC/Controllers/HakkimizdaController.cs" Line="1" Column="1" />
+      <File FileName="Entities/ProductCategory.cs" Line="11" Column="1" />
+      <File FileName="WebMVC/Views/About/Urun.cshtml" Line="3" Column="17" />
+      <File FileName="WebMVC/Controllers/HediyelerController.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Migrations/20230629170314_init.Designer.cs" Line="1" Column="1" />
+      <File FileName="Entities/Dtos/Products/ProductCreateDto.cs" Line="7" Column="44" />
+      <File FileName="Entities/Dtos/Products/ProductGetDto.cs" Line="1" Column="1" />
+      <File FileName="Entities/Dtos/Products/ProductUpdateDto.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Repositories/Abstract/IProductRepository.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Repositories/Concrete/EFCore/ProductRepository.cs" Line="1" Column="1" />
+      <File FileName="Business/Usings.cs" Line="13" Column="1" />
+      <File FileName="Entities/Usings.cs" Line="5" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Fabooks">
-            <Node name="Entities" expanded="True" />
-            <Node name="WebMVC" selected="True">
+          <Node name="Fabooks" expanded="True">
+            <Node name="WebMVC">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Dashboard" expanded="True" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Basket" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

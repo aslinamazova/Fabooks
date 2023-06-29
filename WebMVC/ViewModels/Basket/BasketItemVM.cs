@@ -1,7 +1,6 @@
-﻿using System;
-namespace WebMVC.ViewModels.Basket
+﻿namespace WebMVC.ViewModels.Basket
 {
-	public class BasketItemVM
+    public class BasketItemVM
 	{
         public int ProductId { get; set; }
         public string ImagePath { get; set; }

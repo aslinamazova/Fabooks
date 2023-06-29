@@ -1,9 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using Entities.Common;
-
-namespace Entities
+﻿namespace Entities
 {
 	public class ProductImage:BaseAuditibleEntity
 	{

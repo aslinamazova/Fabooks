@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Entities;
-
-namespace Entities.Common;
+﻿namespace Entities.Common;
 
 public class BaseAuditibleEntity : BaseEntity
 {

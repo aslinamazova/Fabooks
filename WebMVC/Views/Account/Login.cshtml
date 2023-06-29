@@ -1253,29 +1253,28 @@
 
 
                                                 <h2 class="wd-login-title">Giriş Yap</h2>
-
+                                                <div asp-validation-summary="ModelOnly"></div>
                                                 <form method="post"
-                                                      class="login woocommerce-form woocommerce-form-login "
-                                                      action="https://fabooks.com.tr/hesabim/?action=login">
-
-
+                                                      class="login woocommerce-form woocommerce-form-login ">
 
                                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-row-username">
-                                                        <label for="username">
-                                                            Kullanıcı adı veya e-posta
+                                                        <span asp-validation-for="Email"></span>
+                                                        <label for="username" asp-for="Email">
+                                                            E-posta
                                                             adresi&nbsp;<span class="required">*</span>
                                                         </label>
-                                                        <input type="text"
+                                                        <input type="text" asp-for="Email"
                                                                class="woocommerce-Input woocommerce-Input--text input-text"
                                                                name="username" id="username" autocomplete="username"
                                                                value="" />
                                                     </p>
                                                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-row-password">
-                                                        <label for="password">
+                                                        <span asp-validation-for="Password"></span>
+                                                        <label for="password" asp-for="Password">
                                                             Şifre&nbsp;<span class="required">*</span>
                                                         </label>
                                                         <input class="woocommerce-Input woocommerce-Input--text input-text"
-                                                               type="password" name="password" id="password"
+                                                           asp-for="Password"  type="password" name="password" id="password"
                                                                autocomplete="current-password" />
                                                     </p>
 
