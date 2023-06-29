@@ -26,15 +26,18 @@
     <None Remove="Views\Hakkimizda\" />
     <None Remove="Views\Mağaza\" />
     <None Remove="Views\Hediyeler\" />
+    <None Remove="Views\Account\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\About\" />
     <None Remove="Areas\" />
     <None Remove="Areas\Admin\" />
     <None Remove="Areas\Admin\Controllers\" />
     <None Remove="Areas\Admin\Views\" />
     <None Remove="Areas\Admin\Views\Shared\" />
-    <None Remove="Views\Account\" />
-    <None Remove="ViewModels\" />
-    <None Remove="Views\About\" />
     <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="ViewModels\Basket\" />
+    <None Remove="ViewModels\Account\" />
+    <None Remove="Views\Basket\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
@@ -42,15 +45,18 @@
     <Folder Include="Views\Mağaza\" />
     <Folder Include="Views\Hediyeler\" />
     <Folder Include="wwwroot\admin\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\About\" />
     <Folder Include="Areas\" />
     <Folder Include="Areas\Admin\" />
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Views\Account\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="ViewModels\Basket\" />
+    <Folder Include="ViewModels\Account\" />
+    <Folder Include="Views\Basket\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />

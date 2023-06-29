@@ -1,4 +1,5 @@
 ﻿using DataAccess.Repositories.Concrete.EFCore;
+using Entities.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,9 +14,9 @@ public static  class ConfigurationServices
         {
             opt.UseSqlServer(configuration.GetConnectionString("Default"));
         });
-        //services.AddIdentity<AppUser, IdentityRole>()
-          //.AddDefaultTokenProviders()
-            //.AddEntityFrameworkStores<AppDbContext>();
+        services.AddIdentity<AppUser, IdentityRole>()
+          .AddDefaultTokenProviders()
+          .AddEntityFrameworkStores<AppDbContext>();
         services.AddScoped<IProductRepository, ProductRepository>();
 
         return services;
