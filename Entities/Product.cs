@@ -23,7 +23,7 @@ public class Product : BaseAuditibleEntity
 
     public Category? Category { get; set; }
 
-    public decimal? DiscountPercent { get; set; }
+    public int? DiscountPercent { get; set; }
 
     public decimal? DiscountedPrice { get; set; }
 
@@ -31,16 +31,15 @@ public class Product : BaseAuditibleEntity
 
     public List<ProductImage> ProductImage { get; set; }
 
-    public List<Category>? Categories { get; set; }
-
-    public List <ProductCategory>? ProductCategories { get; set; }
 
     public Product()
     {
         ProductImage = new List<ProductImage>();
-        Categories = new List<Category>();
-        ProductCategories = new List<ProductCategory>();
     }
 
+    public static implicit operator List<object>(Product? v)
+    {
+        throw new NotImplementedException();
+    }
 }
 

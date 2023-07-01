@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/projectbundle/WebMVC.bundle.scp.css",
-      "PackagePath": "staticwebassets/WebMVC.bundle.scp.css"
-    },
-    {
       "Id": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/.DS_Store",
       "PackagePath": "staticwebassets/.DS_Store"
     },

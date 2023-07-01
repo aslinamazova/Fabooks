@@ -89,6 +89,11 @@ namespace WebMVC.Controllers
             }
             return Json("OK");
         }
+        public IActionResult AccessDenied(string? ReturnUrl)
+        {
+            return View();
+        }
+
         enum UserRoles
         {
             Admin,

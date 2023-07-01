@@ -29,3 +29,11 @@
 /Users/eslinamazova/Desktop/Fabooks/Business/obj/Debug/net6.0/refint/Business.dll
 /Users/eslinamazova/Desktop/Fabooks/Business/obj/Debug/net6.0/Business.pdb
 /Users/eslinamazova/Desktop/Fabooks/Business/obj/Debug/net6.0/ref/Business.dll
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC.deps.json
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC.runtimeconfig.json
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/appsettings.Development.json
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/appsettings.json
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC.staticwebassets.runtime.json
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC.dll
+/Users/eslinamazova/Desktop/Fabooks/Business/bin/Debug/net6.0/WebMVC.pdb

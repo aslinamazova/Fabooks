@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="tr">
 
 <!-- Mirrored from fabooks.com.tr/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 16:42:39 GMT -->
@@ -1546,7 +1547,7 @@
                             </div>
                             <div class="whb-column whb-col-right whb-visible-lg">
                                 <div class="whb-space-element " style="width:15px;"></div><div class="woodmart-header-links woodmart-navigation menu-simple-dropdown wd-tools-element item-event-hover  my-account-with-text login-side-opener" title="My account">
-                                    <a href="hesabim/index.html">
+                                    <a asp-controller="Account" asp-action="Login">
                                         <span class="wd-tools-icon">
                                         </span>
                                         <span class="wd-tools-text" style="font-weight:bold">
@@ -1590,10 +1591,10 @@
                             <div class="whb-column whb-mobile-right whb-hidden-lg">
 
                                 <div class="woodmart-shopping-cart wd-tools-element woodmart-cart-design-5 cart-widget-opener" title="Sepet">
-                                    <a href="cart/index.html">
+                                    <a asp-controller="Basket" asp-action="Index">
                                         <span class="woodmart-cart-icon wd-tools-icon">
 
-                                            <span class="woodmart-cart-number">0 <span>items</span></span>
+                                            <span class="woodmart-cart-number" value="@ViewBag.BasketItemCount">0 <span>items</span></span>
                                         </span>
                                         <span class="woodmart-cart-totals wd-tools-text">
 
@@ -2081,7 +2082,7 @@
                     </li>
                     <li id="menu-item-3665" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3665 item-level-0"><a href="kategori/outlet/index.html" class="woodmart-nav-link"><span class="nav-link-text">Outlet</span></a></li>
                     <li id="menu-item-6075" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6075 item-level-0"><a href="bizimle-calisin/index.html" class="woodmart-nav-link"><span class="nav-link-text">Bizimle Çalışın</span></a></li>
-                    <li class="menu-item item-level-0  my-account-with-text login-side-opener menu-item-register"><a href="hesabim/index.html">Giriş / Kayıt</a></li>
+                    <li class="menu-item item-level-0  my-account-with-text login-side-opener menu-item-register"><a asp-controller="Account" asp-action="Login">Giriş / Kayıt</a></li>
                 </ul>
             </div>
         </div>
@@ -2096,7 +2097,7 @@
 
 
             <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-row-username">
-                <label for="username">Kullanıcı adı veya e-posta adresi&nbsp;<span class="required">*</span></label>
+                <label for="username" >E-posta adresi&nbsp;<span class="required">*</span></label>
                 <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />
             </p>
             <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-row-password">
@@ -2106,11 +2107,11 @@
 
 
             <p class="form-row">
-                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="dc3dbfe46e" /><input type="hidden" name="_wp_http_referer" value="/" />										<button type="submit" class="button woocommerce-button woocommerce-form-login__submit" name="login" value="Giriş">Giriş</button>
+                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="dc3dbfe46e" /><input type="hidden" name="_wp_http_referer" value="/" />										<button type="submit" asp-controller="Account" asp-action="Login" class="button woocommerce-button woocommerce-form-login__submit" name="login" value="Giriş">Giriş</button>
             </p>
 
             <div class="login-form-footer">
-                <a href="hesabim/lost-password/index.html" class="woocommerce-LostPassword lost_password">Şifremi unuttum</a>
+                <a asp-controller="Account" asp-action="LostPassword" class="woocommerce-LostPassword lost_password">Şifremi unuttum</a>
                 <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
                     <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" value="forever" /> <span>Beni hatırla</span>
                 </label>
@@ -2123,7 +2124,7 @@
 
         <div class="create-account-question">
             <span class="create-account-text">Hesabınız yok mu?</span>
-            <a href="hesabim/index0ddc.html?action=register" class="btn btn-style-link btn-color-primary create-account-button">Yeni Hesap Oluşturun</a>
+            <a asp-controller="Account" asp-action="Register" class="btn btn-style-link btn-color-primary create-account-button">Yeni Hesap Oluşturun</a>
         </div>
     </div>
     <div class="header-banner color-scheme-dark">

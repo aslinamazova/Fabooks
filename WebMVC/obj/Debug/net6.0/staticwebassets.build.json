@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m9OGUwjNP88ic3WM9dBUNuVHbo3KgXNXbStxvhMIrNg=",
+  "Hash": "KLPv5y0P+Uq3bVmKsQ8EezOXa9ym7R2+ofsjSQvqyAU=",
   "Source": "WebMVC",
   "BasePath": "_content/WebMVC",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/bundle/WebMVC.styles.css",
-      "SourceId": "WebMVC",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/bundle/",
-      "BasePath": "_content/WebMVC",
-      "RelativePath": "WebMVC.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/bundle/WebMVC.styles.css"
-    },
-    {
-      "Identity": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/projectbundle/WebMVC.bundle.scp.css",
-      "SourceId": "WebMVC",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/projectbundle/",
-      "BasePath": "_content/WebMVC",
-      "RelativePath": "WebMVC.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/projectbundle/WebMVC.bundle.scp.css"
-    },
     {
       "Identity": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/wwwroot/.DS_Store",
       "SourceId": "WebMVC",

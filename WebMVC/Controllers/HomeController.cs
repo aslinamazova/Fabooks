@@ -27,15 +27,28 @@ public class HomeController : Controller
         
         foreach (var product in products)
         {
-            product.DiscountedPrice = ApplyDiscount(product.Price, (decimal)product.DiscountPercent);
+            product.DiscountedPrice = ApplyDiscount(product.Price, product.DiscountPercent);
         }
         return View(products);
     }
-    private decimal ApplyDiscount(decimal price, decimal discountpercent)
+
+    private decimal ApplyDiscount(decimal price, int? discountPercent)
     {
-        decimal discountedPrice = price - (price * (discountpercent / 100));
-        return discountedPrice;
+        if (discountPercent.HasValue)
+        {
+            decimal discountAmount = Math.Round(price * ((decimal)discountPercent / 100), 2);
+            decimal discountedPrice = price - discountAmount;
+            return (discountedPrice);
+        }
+        else
+        {
+            return price;
+        }
     }
+
+
+
+
 
 }
 

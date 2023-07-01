@@ -1,0 +1,77 @@
+﻿@model List<Product>
+@{
+    int productCount = 0;
+    int maxProductCount = 8;
+}
+<div class="product-grid-item wd-with-labels product woodmart-hover-icons type-product post-5040 status-publish last instock product_cat-takvimler product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="1" data-id="5040">
+    @foreach (Product product in Model)
+    {
+        @if (productCount >= maxProductCount)
+        {
+            break;
+        }
+        <div class="product-element-top">
+            <a asp-controller="About" asp-action="Urun" asp-route-id="@product.Id" class="product-image-link">
+                @if (product.Stock == 0 && product.DiscountPercent == null)
+                {
+                    <div class="product-labels labels-rectangular">
+                        <span class="out-of-stock product-label">Tükendi</span>
+                    </div>
+                }
+                else if (product.Stock == 0)
+                {
+                    <div class="product-labels labels-rectangular">
+                        <span class="out-of-stock product-label">Tükendi</span>
+                    </div>
+                }
+                else if (product.DiscountPercent != null)
+                {
+                    <div class="product-labels labels-rectangular">
+                        <span class="onsale product-label">- @product.DiscountPercent %</span>
+                    </div>
+                }
+
+
+
+                @foreach (var image in product.ProductImage)
+                {
+                    if (image.PrimaryImage)
+                    {
+                        <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="@image.ImagePath" data-wood-src="@Url.Content(image.ImagePath)" width="231" height="300" alt="0" title="0" />
+                    }
+                }
+
+            </a>
+            <div class="hover-img">
+                <a asp-controller="About" asp-action="Urun" asp-route-id="@product.Id">
+                    @foreach (var image in product.ProductImage)
+                    {
+                        if (image.SecondaryImage)
+                        {
+                            <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="@image.ImagePath" data-wood-src="@Url.Content(image.ImagePath)" width="231" height="300" alt="1" title="1" />
+                        }
+                    }
+
+                </a>
+            </div>
+            <div class="wrapp-buttons">
+                <div class="woodmart-buttons">
+                    <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
+                        <a href="index823e.html?add-to-cart=5040" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="5040" data-product_sku="8682376185851" aria-label="&ldquo;Portakal Bahçesi Süresiz Aile Duvar Planlayıcı Takvim&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="5040">
+                        <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
+                            window.wpmDataLayer.products[5040] = { "id": "5040", "sku": "8682376185851", "price": 48.8, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "5040", "sku": "8682376185851", "gpf": "woocommerce_gpf_5040", "gla": "gla_5040" }, "isVariable": false, "name": "Portakal Bahçesi Süresiz Aile Duvar Planlayıcı Takvim", "category": ["Takvimler", "Yeni"], "isVariation": false };
+                            window.wpmDataLayer.products[5040]['position'] = window.wpmDataLayer.position++</script>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-shop-wrapper">
+                <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
+                <div class="quick-shop-form">
+                </div>
+            </div>
+        </div>
+        <h3 class="product-title"><a asp-controller="About" asp-action="Urun" asp-route-id="@product.Id">@product.Name</a></h3>
+        <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>@product.Price</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>@product.DiscountedPrice</bdi></span></ins></span>
+
+    }
+</div>

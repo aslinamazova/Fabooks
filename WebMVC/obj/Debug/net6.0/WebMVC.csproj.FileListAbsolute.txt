@@ -68,12 +68,12 @@
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/staticwebassets.pack.json
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/staticwebassets.build.json
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/staticwebassets.development.json
-/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/bundle/WebMVC.styles.css
-/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/scopedcss/projectbundle/WebMVC.bundle.scp.css
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/WebMVC.csproj.CopyComplete
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/WebMVC.dll
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/refint/WebMVC.dll
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/WebMVC.pdb
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/WebMVC.genruntimeconfig.cache
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/ref/WebMVC.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/AutoMapper.dll

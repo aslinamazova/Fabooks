@@ -13,15 +13,10 @@ public class Category : BaseAuditibleEntity
 
     public bool IsActive { get; set; }
 
-    public List<Product>? Products { get; set; }
+    public List<Product> Products { get; set; } = new List<Product>();
 
-    public List<ProductCategory>? ProductCategories { get; set; }
 
-    public Category()
-    {
-        Products = new List<Product>();
-        ProductCategories = new List<ProductCategory>();
-    }
+
 
 }
 
