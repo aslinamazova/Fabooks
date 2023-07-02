@@ -1,34 +1,77 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using DataAccess;
+using Entities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebMVC.Controllers
 {
     public class HediyelerController : Controller
     {
-        public IActionResult Annemİçin()
+        private readonly AppDbContext _dbContext;
+
+        public HediyelerController(AppDbContext dbContext)
         {
-            return View();
+            _dbContext = dbContext;
         }
-        public IActionResult Arkadaşımİçin()
+
+        public async Task<IActionResult> Annemİçin(int take)
         {
-            return View();
+            List<Product> products = await _dbContext.Products
+                .Where(p => !p.IsDeleted)
+                .OrderByDescending(p => p.Id)
+                .Take(take)
+                .Include(p => p.Category)
+                .Include(p => p.ProductImage)
+                .ToListAsync();
+            return View(products);
+        }
+        public async Task<IActionResult> Arkadaşımİçin(int take)
+        {
+            List<Product> products = await _dbContext.Products
+                .Where(p => !p.IsDeleted)
+                .OrderByDescending(p => p.Id)
+                .Take(take)
+                .Include(p => p.Category)
+                .Include(p => p.ProductImage)
+                .ToListAsync();
+            return View(products);
         }
         public IActionResult Babamİçin()
         {
             return View();
         }
-       
-        public IActionResult Sevgililerİçin()
+        public async Task<IActionResult> Sevgililerİçin(int take)
         {
-            return View();
+            List<Product> products = await _dbContext.Products
+                .Where(p => !p.IsDeleted)
+                .OrderByDescending(p => p.Id)
+                .Take(take)
+                .Include(p => p.Category)
+                .Include(p => p.ProductImage)
+                .ToListAsync();
+            return View(products);
         }
-        public IActionResult TümHediyeler()
+        public async Task<IActionResult> TümHediyeler(int take)
         {
-            return View();
+            List<Product> products = await _dbContext.Products
+                .Where(p => !p.IsDeleted)
+                .OrderByDescending(p => p.Id)
+                .Take(take)
+                .Include(p => p.Category)
+                .Include(p => p.ProductImage)
+                .ToListAsync();
+            return View(products);
         }
-        public IActionResult Eglencemotivasyon()
+        public async Task<IActionResult> Eglencemotivasyon(int take)
         {
-            return View();
+            List<Product> products = await _dbContext.Products
+                .Where(p => !p.IsDeleted)
+                .OrderByDescending(p => p.Id)
+                .Take(take)
+                .Include(p => p.Category)
+                .Include(p => p.ProductImage)
+                .ToListAsync();
+            return View(products);
         }
     }
 }

@@ -357,7 +357,7 @@
                                                                     {
                                                                         if (image.PrimaryImage)
                                                                         {
-                                                                            <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="@image.ImagePath" data-wood-src="@Url.Content(image.ImagePath)" width="231" height="300" alt="0" title="0" />
+                                                                            <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="~/assets/@image.ImagePath" data-wood-src="@Url.Content($"~/assets/{image.ImagePath}")" width="231" height="300" alt="0" title="0" />
                                                                         }
                                                                     }
 
@@ -368,7 +368,7 @@
                                                                         {
                                                                             if (image.SecondaryImage)
                                                                             {
-                                                                                <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="@image.ImagePath" data-wood-src="@Url.Content(image.ImagePath)" width="231" height="300" alt="1" title="1" />
+                                                                                <img class="woodmart-lazy-load woodmart-lazy-fade content-product-image" src="~/assets/@image.ImagePath" data-wood-src="@Url.Content($"~/assets/{image.ImagePath}")" width="231" height="300" alt="1" title="1" />
                                                                             }
                                                                         }
                                                                         

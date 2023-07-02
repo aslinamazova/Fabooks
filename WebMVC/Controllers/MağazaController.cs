@@ -1,48 +1,120 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using DataAccess;
+using Entities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebMVC.Controllers;
 
 public class MağazaController : Controller
 {
-    public IActionResult Planlayıcılar()
+    private readonly AppDbContext _dbContext;
+
+    public MağazaController(AppDbContext dbContext)
     {
-        return View();
-    }
-    public IActionResult Ajandalar()
-    {
-        return View();
-    }
-    public IActionResult Defterler()
-    {
-        return View();
-    }
-    public IActionResult Günlükler()
-    {
-        return View();
-    }
-    public IActionResult Posterler()
-    {
-        return View();
-    }
-    public IActionResult Takvimler()
-    {
-        return View();
-    }
-    public IActionResult Bloknotlar()
-    {
-        return View();
+        _dbContext = dbContext;
     }
 
-    public IActionResult Yeni()
+    public async Task<IActionResult> Planlayıcılar(int take)
     {
-        return View();
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
     }
-    public IActionResult Outlet()
+    public async Task<IActionResult> Ajandalar(int take)
     {
-        return View();
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+    public async Task<IActionResult> Defterler(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+    public async Task<IActionResult> Günlükler(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
     }
 
+    public async Task<IActionResult> Posterler(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+    public async Task<IActionResult> Takvimler(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+    public async Task<IActionResult> Bloknotlar(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+    public async Task<IActionResult> Yeni(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
+
+    public async Task<IActionResult> Outlet(int take)
+    {
+        List<Product> products = await _dbContext.Products
+            .Where(p => !p.IsDeleted)
+            .OrderByDescending(p => p.Id)
+            .Take(take)
+            .Include(p => p.Category)
+            .Include(p => p.ProductImage)
+            .ToListAsync();
+        return View(products);
+    }
     
 }
 

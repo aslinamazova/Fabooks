@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model List<Product>
+<!DOCTYPE html>
 <html lang="tr">
 
 <!-- Mirrored from fabooks.com.tr/kategori/ajandalar-ve-planlayicilar/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 16:48:56 GMT -->
@@ -514,7 +515,7 @@
     <script type="text/javascript">!function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             }; if (!f._fbq) f._fbq = n;
             n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
             t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
@@ -590,604 +591,614 @@
             //});
         };</script>
     <style type="text/css" id="wp-custom-css">
-			li#menu-item-6076 a {
-    color: #ffb3a7;
-}
-
-.notifications-sticky div.wpcf7-response-output:after {display: none;}
-
-.on-siparis-urunu {display: none;}
-
-a.btn.bb-button, a.btn.bb-button:hover {
-    color: #fff;
-    font-weight: 700;
-}
-
-.whb-flex-row.whb-general-header-inner {
-    margin-top: 5px;
-}
-
-h4.banner-title.woodmart-font-weight-300 {
-    display: table;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 8px;
-}
-
-.price .amount {
-    color: #2e2a2a;
-    border-bottom: 2px solid #ffb3a7;
-}
-
-.mc4wp-form input[type="submit"], .mc4wp-form input[type="submit"]:hover {
-    background-color: #ffb3a7;
-}
-
-.btns-accent-light .mc4wp-form input[type=submit],  .btns-accent-light .mc4wp-form input[type=submit]:hover {
-    color: #2e2a2a;
-}
-
-.variations td.label {
-    display: block;
-    padding-bottom: 5px !important;
-}
-
-.variations td.value {
-    display: block;
-}
-
-.variations_form .variations .value select {
-    max-width: 100%;
-}
-
-a.reset_variations {
-    margin-left: 0 !important;
-}
-
-.btns-accent-dark .comment-form .submit, .btns-shop-dark .single_add_to_cart_button, .btns-accent-dark .mc4wp-form input[type=submit], .btns-accent-dark .comment-form .submit:hover, .btns-shop-dark .single_add_to_cart_button:hover, .btns-accent-dark .mc4wp-form input[type=submit]:hover {
-    color: #583331;
-	font-weight: 400;
-}
-
-.product-image-summary .variations {
-    margin-bottom: 10px;
-}
-
-.product-image-summary .woocommerce-product-details__short-description {
-    margin-bottom: 20px;
-}
-
-.product-image-summary .entry-title {
-	  line-height: 1;
-    font-size: 24px;
-}
+        li#menu-item-6076 a {
+            color: #ffb3a7;
+        }
+
+        .notifications-sticky div.wpcf7-response-output:after {
+            display: none;
+        }
+
+        .on-siparis-urunu {
+            display: none;
+        }
+
+        a.btn.bb-button, a.btn.bb-button:hover {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .whb-flex-row.whb-general-header-inner {
+            margin-top: 5px;
+        }
+
+        h4.banner-title.woodmart-font-weight-300 {
+            display: table;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px;
+        }
+
+        .price .amount {
+            color: #2e2a2a;
+            border-bottom: 2px solid #ffb3a7;
+        }
+
+        .mc4wp-form input[type="submit"], .mc4wp-form input[type="submit"]:hover {
+            background-color: #ffb3a7;
+        }
+
+        .btns-accent-light .mc4wp-form input[type=submit], .btns-accent-light .mc4wp-form input[type=submit]:hover {
+            color: #2e2a2a;
+        }
+
+        .variations td.label {
+            display: block;
+            padding-bottom: 5px !important;
+        }
+
+        .variations td.value {
+            display: block;
+        }
+
+        .variations_form .variations .value select {
+            max-width: 100%;
+        }
+
+        a.reset_variations {
+            margin-left: 0 !important;
+        }
+
+        .btns-accent-dark .comment-form .submit, .btns-shop-dark .single_add_to_cart_button, .btns-accent-dark .mc4wp-form input[type=submit], .btns-accent-dark .comment-form .submit:hover, .btns-shop-dark .single_add_to_cart_button:hover, .btns-accent-dark .mc4wp-form input[type=submit]:hover {
+            color: #583331;
+            font-weight: 400;
+        }
+
+        .product-image-summary .variations {
+            margin-bottom: 10px;
+        }
+
+        .product-image-summary .woocommerce-product-details__short-description {
+            margin-bottom: 20px;
+        }
+
+        .product-image-summary .entry-title {
+            line-height: 1;
+            font-size: 24px;
+        }
+
+        .star-rating span:before {
+            color: #ffb3a7;
+        }
+
+        span.menu-label, .woodmart-cart-design-5 .woodmart-cart-number {
+            color: #573331;
+        }
+
+        span.urun-ek-bilgi {
+            color: #2e2a2a;
+            font-weight: 900;
+            border-bottom: 2px solid #ffb3a7;
+            margin-right: 4px;
+        }
+
+        .ek-bilgi-kutusu {
+            margin-bottom: 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(129,129,129,.2);
+        }
+
+        .btns-shop-dark .single_add_to_cart_button {
+            width: 74%;
+        }
+
+        .product-image-summary .quantity {
+            width: 24%;
+            margin-right: 1%;
+        }
 
-.star-rating span:before {
-    color: #ffb3a7;
-}
-
-span.menu-label, .woodmart-cart-design-5 .woodmart-cart-number {
-    color: #573331;
-}
-
-span.urun-ek-bilgi {
-    color: #2e2a2a;
-    font-weight: 900;
-    border-bottom: 2px solid #ffb3a7;
-    margin-right: 4px;
-}
-
-.ek-bilgi-kutusu {
-    margin-bottom: 0;
-	padding-top: 20px;
-    border-top: 1px solid rgba(129,129,129,.2);
-}
-
-.btns-shop-dark .single_add_to_cart_button {
-    width: 74%;
-}
-
-.product-image-summary .quantity {
-    width: 24%;
-    margin-right: 1%;
-}
-
-.comment-form-comment textarea {
-    min-height: 42px;
-    border: 2px solid #e6e6e6;
-    border-radius: 5px;
-}
-
-.required {
-    color: #ffb3a7;
-}
-
-
-.woocommerce-Reviews {
-    display: block;
-}
-
-.woocommerce-Reviews #comments, .woocommerce-Reviews #review_form_wrapper {
-    max-width: 100%;
-}
-
-.commentlist>li {
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    border-bottom: 1px solid rgba(129,129,129,.2);
-}
-
-ul.tabs.wc-tabs {
-    display: none;
-}
-
-.woocommerce-product-details__short-description li {
-    margin-bottom: 5px !important;
-}
-
-body {
-    color: #2e2a2a;
-}
-
-
-
-span.typed-me, span.typed-cursor, span.turuncu {
-    color: #ffb3a7;
-}
-
-.wrapp-buttons {
-    display: none;
-}
-
-.hide-larger-price .price {
-    word-spacing: normal;
-}
-
-h3.product-title, span.price {
-    text-align: left;
-}
-
-
-
-.sub-menu-dropdown.color-scheme-dark {
-    padding-top: 15px;
-}
-
-.sub-menu-dropdown .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
-    margin-bottom: 15px;
-}
-
-
-.sub-menu-dropdown p {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-span.sub-cat {
-    padding-right: 10px;
-}
-
-span.sub-cat:last-child {
-    padding-right: 0;
-}
-
-.dokan-alert-danger, .dokan-alert-info, .dokan-alert-warning, .dokan-error, .dokan-info, .mc4wp-error, .mc4wp-notice, .woocommerce-error, .woocommerce-info, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors {
-    background-color: #ffb3a7;
-    color: #ffffff;
-    font-weight: 900;
-	border-radius: 4px;
-}
-
-.checkout-order-review:after, .checkout-order-review:before, .woocommerce-order-pay .entry-content>.woocommerce:after, .woocommerce-order-pay .entry-content>.woocommerce:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: transparent;
-    background-image: none;
-    background-size: 15px 15px;
-}
-
-
-order-review, .woocommerce-order-pay .entry-content>.woocommerce {
-    position: relative;
-    margin-bottom: 40px;
-    padding: 30px;
-    background-color: #F8F8F8;
-    border-radius: 4px;
-}
-
-.woocommerce-billing-fields, woocommerce-shipping-fields {
-    position: relative;
-    margin-bottom: 40px;
-    padding: 30px;
-    background-color: #F8F8F8;
-    border-radius: 4px;
-    margin-top: 0px;
-}
-
-.checkout-order-review {
-    border-radius: 4px;
-}
-
-input[type=text], input[type=email], input[type=password], input[type=search], input[type=number], input[type=url], input[type=tel], input[type=date], select, textarea, body .select2-container--default .select2-selection {
-    background-color: white;
-    border-radius: 4px;
-}
-
-.woocommerce-invalid .select2-container--default .select2-selection--single, .woocommerce-invalid input:not(:focus) {
-    border-color: #ffb3a7;
-}
-
-
-
-.wc-stripe-elements-field, .wc-stripe-iban-element-field {
-    padding: 0 15px;
-    max-width: 100%;
-    width: 100%;
-    height: 42px;
-    border: 2px solid rgba(129,129,129,.2);
-    background-color: transparent;
-    box-shadow: none;
-    vertical-align: middle;
-    font-size: 14px;
-    transition: border-color .5s ease;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-/* Target the Credit Card */
-#stripe-card-element {
-    background: #ffffff !important;
-    padding: 10px !important;
-}
-
-/* Target the Expiry Date */
-#stripe-exp-element {
-    background: #ffffff !important;
-    padding: 10px !important;
-}
-
-/* Target the CVC Code */
-.woocommerce-checkout-review-order #stripe-cvc-element {
-    background: #ffffff !important;
-    padding: 10px !important;
-}
-
-#wc-stripe-cc-form .form-row.form-row-first {
-    width: 48%;
-    display: inline-block;
-}
-
-#wc-stripe-cc-form .form-row.form-row-last {
-    width: 48%;
-    display: inline-block;
-    margin-left: 2%;
-}
-
-span.optional {
-    display: none;
-}
-
-.shipping_address {
-    position: relative;
-    margin-bottom: 40px;
-    padding: 30px;
-    background-color: #F8F8F8;
-    border-radius: 4px;
-    margin-top: 0px;
-    border: none;
-}
-
-
-label.woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox {
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    text-transform: capitalize !important;
-}
-
-
-input#ship-to-different-address-checkbox {
-    vertical-align: unset;
-}
-
-.woodmart-table-wrapper, .payment_box.payment_method_stripe {
-    border-radius: 4px;
-}
-
-
-.woocommerce-checkout-review-order-table td, .woocommerce-checkout-review-order-table th {
-    max-width: 60%;
-    width: 60%;
-}
-
-
-.cart_item .ts-pro-img {
-    max-width: 20%;
-    float: left;
-    margin-right: 10px;
-}
-
-label.woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox {
-    text-transform: inherit !important;
-}
-
-.woocommerce-thankyou-order-received {
-    margin-bottom: 30px;
-    padding: 3%;
-    width: 100%;
-    border: 2px dashed #ffb3a7;
-    color: #000000;
-    text-align: center;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 1.4;
-}
-
-
-.woocommerce button[name="update_cart"],
-.woocommerce input[name="update_cart"] {
-	display: none;
-}
-
-.woodmart-title-width-40 .title-after_title, .woodmart-title-width-40 .title-subtitle, .woodmart-title-width-40 .woodmart-title-container {
-    max-width: 50%;
-}
-
-.cart-widget-side.woodmart-cart-opened {
-    z-index: 9999999;
-}
-
-.footer-column.footer-column-1.col-12 {
-    display: none;
-}
-
-.whb-color-dark .navigation-style-default .item-level-0:hover > a span, .whb-color-dark .navigation-style-default .item-level-0.current-menu-item > a span {
-    color: #333333 !important;
-    border-bottom: 3px solid #ffb3a7;
-    padding-bottom: 5px;
-    margin-top:7px;
-}
-
-.whb-color-dark .navigation-style-default .item-level-0> a {
-    padding-bottom: 3px;
-}
-
-.whb-color-dark .navigation-style-default .item-level-0.current-menu-item > a {
-    color: inherit;
-}
-
-.woodmart-title-style-underlined-2:not(.woodmart-title-color-gradient).woodmart-title-size-extra-large .title {
-    text-shadow: 2px 2px #fff, 2px -2px #fff, -2px 2px #fff, -2px -2px #FFF;
-    padding-bottom: 10px;
-}
-
-.whb-scroll-slide .main-nav .item-level-0>a {transition: none;}
-
-.woodmart-show-product-gallery-wrap.wd-gallery-btn {
-    display: none;
-}
-
-.product-label.out-of-stock {
-    background-color: #ffb3a7;
-    color: #ffffff;
-    font-weight: 900;
-}
-
-p.stock.out-of-stock {
-    color: #ffb3a7;
-}
-
-.woodmart-my-account-links a:before {
-    color: #ffb3a7;
-}
-
-
-.woodmart-my-account-links .customer-logout-link {
-    display: none;
-}
-
-p#billing_company_field, p#billing_address_2_field, p#shipping_company_field, p#shipping_address_2_field {
-    display: none !important;
-}
-
-p#billing_postcode_field .required {
-    display: none;
-}
-
-button.LightboxModal-cancel:before {
-    content: 'X';
-    color: white;
-    font-size: 20px;
-}
-
-
-button.LightboxModal-cancel {
-    color: transparent !important;
-    text-shadow: none !important;
-    font-size: 0px !important;
-}
-
-li.meta-author {
-    display: none;
-}
-
-.bulten-kayit span.wpcf7-form-control-wrap.your-email {
-    display: inline-block;
-}
-
-
-.bulten-kayit input.wpcf7-form-control.wpcf7-submit.btn-color-black {
-    display: inline-block;
-    background: #ffb3a7;
-    color: #583331;
-    border-radius: 0 4px 4px 0;
-    margin-left: -1px;
-    font-weight: 500;
-}
-
-.bulten-kayit input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
-    border-radius: 4px 0 0 4px;
-    max-width: 240px;
-}
-
-.bulten-kayit .col-md-6 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.bulten-kayit span.wpcf7-not-valid-tip {
-    position: absolute;
-}
-
-.checkout_coupon {
-    margin-bottom: 30px;
-    padding: 20px 20px;
-    max-width: 100%;
-    border: 2px dashed #DDD;
-    text-align: center;
-}
-
-.kargo-takip a {
-    color: #ffb3a7;
-}
-
-p.kargo-takip {
-    display: inline-block;
-    padding: 5px 8px;
-    background-color: #F9F9F9;
-    color: #2d2a2a;
-    font-weight: 600;
-    line-height: 1;
-}
-
-p.woocommerce-verification-required {
-    padding-left: 30px;
-}
-
-.product_meta span.sku_wrapper {
-    display: none;
-}
-
-.wcpa_form_item.wcpa_type_text.form-control.birinci-isim_parent,
-.wcpa_form_item.wcpa_type_text.form-control.ikinci_isim_parent {
-    width: 48%;
-    display: inline-block;
-}
-
-.wcpa_form_item.wcpa_type_text.form-control.birinci-isim_parent {
-    margin-right: 4%;
-}
-
-.woocommerce-order-details {
-    margin-top: 0;
-}
-.wd-gallery-btn>a {
-    box-shadow: none;
-    background: white;
-    display: block;
-	border-radius: 0;
-}
-
-.product-grid-item .star-rating {
-    position: absolute;
-    display: block;
-    left: 120px;
-}
-
-.price ins .amount {
-    color: #2e2a2a;
-    border-bottom: 2px solid #ffb3a7 !important;
-}
-.price .amount {
-    color: #2e2a2a;
-    border-bottom: 0px solid #ffb3a7;
-}
-
-
-@@media (min-width: 768px) {
-.pr-left .wpb_wrapper {
-    margin-right: -5px;
-}
-
-.pr-right .wpb_wrapper {
-    margin-left: -5px;
-}
-
-	h3.product-title {
-    min-height: 36px;
-}
-
-	.shop-loop-head, .row.product-image-summary-wrap {
-    padding-top: 20px;
-}
-
-}
-@@media (max-width: 374px) {
-		.product-grid-item .star-rating  {
- display:none;
-}
-}
-
-@@media (min-width: 375px) and (max-width: 768px){
-	.product-grid-item .star-rating  {
-    position: absolute;
-    display: block;
-    left: 100px;
-}
-}
-
-@@media (max-width: 768px) {
-.woodmart-slider .owl-dots {
-    display: block;
-}
-	.owl-nav {
-    display: none;
-}
-
-	h3.product-title {
-    min-height: 32px;
-}
-
-.ts-pro-img {
-  display: none;
-}
-
-
-}
-
-@@media (max-width: 1024px) {
-	.kategori-header {display:none !important;}
-
-}
-@@media (min-width: 1025px) {
-/*
-.whb-general-header .woodmart-logo img {
-    max-height: 130px;
-    margin-top: 50px;
-    border: 6px solid white;
-    border-radius: 130px;
-    padding: 0;
-}
-*/
-
-	.site-content.shop-content-area.col-12.breadcrumbs-location-summary.content-with-products {
-    margin-top: -40px;
-}
-	}
-
-@@media (max-width: 1024px){
-/*.whb-general-header .woodmart-logo img {
-    max-height: 115px;
-    margin-top: 50px;
-    border: 5px solid white;
-    border-radius: 115px;
-    padding: 0;
-}
-*/
-	}		</style>
+        .comment-form-comment textarea {
+            min-height: 42px;
+            border: 2px solid #e6e6e6;
+            border-radius: 5px;
+        }
+
+        .required {
+            color: #ffb3a7;
+        }
+
+
+        .woocommerce-Reviews {
+            display: block;
+        }
+
+            .woocommerce-Reviews #comments, .woocommerce-Reviews #review_form_wrapper {
+                max-width: 100%;
+            }
+
+        .commentlist > li {
+            margin-bottom: 15px;
+            padding-bottom: 0;
+            border-bottom: 1px solid rgba(129,129,129,.2);
+        }
+
+        ul.tabs.wc-tabs {
+            display: none;
+        }
+
+        .woocommerce-product-details__short-description li {
+            margin-bottom: 5px !important;
+        }
+
+        body {
+            color: #2e2a2a;
+        }
+
+
+
+        span.typed-me, span.typed-cursor, span.turuncu {
+            color: #ffb3a7;
+        }
+
+        .wrapp-buttons {
+            display: none;
+        }
+
+        .hide-larger-price .price {
+            word-spacing: normal;
+        }
+
+        h3.product-title, span.price {
+            text-align: left;
+        }
+
+
+
+        .sub-menu-dropdown.color-scheme-dark {
+            padding-top: 15px;
+        }
+
+        .sub-menu-dropdown .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+            margin-bottom: 15px;
+        }
+
+
+        .sub-menu-dropdown p {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        span.sub-cat {
+            padding-right: 10px;
+        }
+
+            span.sub-cat:last-child {
+                padding-right: 0;
+            }
+
+        .dokan-alert-danger, .dokan-alert-info, .dokan-alert-warning, .dokan-error, .dokan-info, .mc4wp-error, .mc4wp-notice, .woocommerce-error, .woocommerce-info, div.wpcf7-mail-sent-ng, div.wpcf7-validation-errors {
+            background-color: #ffb3a7;
+            color: #ffffff;
+            font-weight: 900;
+            border-radius: 4px;
+        }
+
+        .checkout-order-review:after, .checkout-order-review:before, .woocommerce-order-pay .entry-content > .woocommerce:after, .woocommerce-order-pay .entry-content > .woocommerce:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: transparent;
+            background-image: none;
+            background-size: 15px 15px;
+        }
+
+
+        order-review, .woocommerce-order-pay .entry-content > .woocommerce {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #F8F8F8;
+            border-radius: 4px;
+        }
+
+        .woocommerce-billing-fields, woocommerce-shipping-fields {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #F8F8F8;
+            border-radius: 4px;
+            margin-top: 0px;
+        }
+
+        .checkout-order-review {
+            border-radius: 4px;
+        }
+
+        input[type=text], input[type=email], input[type=password], input[type=search], input[type=number], input[type=url], input[type=tel], input[type=date], select, textarea, body .select2-container--default .select2-selection {
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .woocommerce-invalid .select2-container--default .select2-selection--single, .woocommerce-invalid input:not(:focus) {
+            border-color: #ffb3a7;
+        }
+
+
+
+        .wc-stripe-elements-field, .wc-stripe-iban-element-field {
+            padding: 0 15px;
+            max-width: 100%;
+            width: 100%;
+            height: 42px;
+            border: 2px solid rgba(129,129,129,.2);
+            background-color: transparent;
+            box-shadow: none;
+            vertical-align: middle;
+            font-size: 14px;
+            transition: border-color .5s ease;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* Target the Credit Card */
+        #stripe-card-element {
+            background: #ffffff !important;
+            padding: 10px !important;
+        }
+
+        /* Target the Expiry Date */
+        #stripe-exp-element {
+            background: #ffffff !important;
+            padding: 10px !important;
+        }
+
+        /* Target the CVC Code */
+        .woocommerce-checkout-review-order #stripe-cvc-element {
+            background: #ffffff !important;
+            padding: 10px !important;
+        }
+
+        #wc-stripe-cc-form .form-row.form-row-first {
+            width: 48%;
+            display: inline-block;
+        }
+
+        #wc-stripe-cc-form .form-row.form-row-last {
+            width: 48%;
+            display: inline-block;
+            margin-left: 2%;
+        }
+
+        span.optional {
+            display: none;
+        }
+
+        .shipping_address {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #F8F8F8;
+            border-radius: 4px;
+            margin-top: 0px;
+            border: none;
+        }
+
+
+        label.woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox {
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            text-transform: capitalize !important;
+        }
+
+
+        input#ship-to-different-address-checkbox {
+            vertical-align: unset;
+        }
+
+        .woodmart-table-wrapper, .payment_box.payment_method_stripe {
+            border-radius: 4px;
+        }
+
+
+        .woocommerce-checkout-review-order-table td, .woocommerce-checkout-review-order-table th {
+            max-width: 60%;
+            width: 60%;
+        }
+
+
+        .cart_item .ts-pro-img {
+            max-width: 20%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        label.woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox {
+            text-transform: inherit !important;
+        }
+
+        .woocommerce-thankyou-order-received {
+            margin-bottom: 30px;
+            padding: 3%;
+            width: 100%;
+            border: 2px dashed #ffb3a7;
+            color: #000000;
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+
+        .woocommerce button[name="update_cart"],
+        .woocommerce input[name="update_cart"] {
+            display: none;
+        }
+
+        .woodmart-title-width-40 .title-after_title, .woodmart-title-width-40 .title-subtitle, .woodmart-title-width-40 .woodmart-title-container {
+            max-width: 50%;
+        }
+
+        .cart-widget-side.woodmart-cart-opened {
+            z-index: 9999999;
+        }
+
+        .footer-column.footer-column-1.col-12 {
+            display: none;
+        }
+
+        .whb-color-dark .navigation-style-default .item-level-0:hover > a span, .whb-color-dark .navigation-style-default .item-level-0.current-menu-item > a span {
+            color: #333333 !important;
+            border-bottom: 3px solid #ffb3a7;
+            padding-bottom: 5px;
+            margin-top: 7px;
+        }
+
+        .whb-color-dark .navigation-style-default .item-level-0 > a {
+            padding-bottom: 3px;
+        }
+
+        .whb-color-dark .navigation-style-default .item-level-0.current-menu-item > a {
+            color: inherit;
+        }
+
+        .woodmart-title-style-underlined-2:not(.woodmart-title-color-gradient).woodmart-title-size-extra-large .title {
+            text-shadow: 2px 2px #fff, 2px -2px #fff, -2px 2px #fff, -2px -2px #FFF;
+            padding-bottom: 10px;
+        }
+
+        .whb-scroll-slide .main-nav .item-level-0 > a {
+            transition: none;
+        }
+
+        .woodmart-show-product-gallery-wrap.wd-gallery-btn {
+            display: none;
+        }
+
+        .product-label.out-of-stock {
+            background-color: #ffb3a7;
+            color: #ffffff;
+            font-weight: 900;
+        }
+
+        p.stock.out-of-stock {
+            color: #ffb3a7;
+        }
+
+        .woodmart-my-account-links a:before {
+            color: #ffb3a7;
+        }
+
+
+        .woodmart-my-account-links .customer-logout-link {
+            display: none;
+        }
+
+        p#billing_company_field, p#billing_address_2_field, p#shipping_company_field, p#shipping_address_2_field {
+            display: none !important;
+        }
+
+        p#billing_postcode_field .required {
+            display: none;
+        }
+
+        button.LightboxModal-cancel:before {
+            content: 'X';
+            color: white;
+            font-size: 20px;
+        }
+
+
+        button.LightboxModal-cancel {
+            color: transparent !important;
+            text-shadow: none !important;
+            font-size: 0px !important;
+        }
+
+        li.meta-author {
+            display: none;
+        }
+
+        .bulten-kayit span.wpcf7-form-control-wrap.your-email {
+            display: inline-block;
+        }
+
+
+        .bulten-kayit input.wpcf7-form-control.wpcf7-submit.btn-color-black {
+            display: inline-block;
+            background: #ffb3a7;
+            color: #583331;
+            border-radius: 0 4px 4px 0;
+            margin-left: -1px;
+            font-weight: 500;
+        }
+
+        .bulten-kayit input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+            border-radius: 4px 0 0 4px;
+            max-width: 240px;
+        }
+
+        .bulten-kayit .col-md-6 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bulten-kayit span.wpcf7-not-valid-tip {
+            position: absolute;
+        }
+
+        .checkout_coupon {
+            margin-bottom: 30px;
+            padding: 20px 20px;
+            max-width: 100%;
+            border: 2px dashed #DDD;
+            text-align: center;
+        }
+
+        .kargo-takip a {
+            color: #ffb3a7;
+        }
+
+        p.kargo-takip {
+            display: inline-block;
+            padding: 5px 8px;
+            background-color: #F9F9F9;
+            color: #2d2a2a;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        p.woocommerce-verification-required {
+            padding-left: 30px;
+        }
+
+        .product_meta span.sku_wrapper {
+            display: none;
+        }
+
+        .wcpa_form_item.wcpa_type_text.form-control.birinci-isim_parent,
+        .wcpa_form_item.wcpa_type_text.form-control.ikinci_isim_parent {
+            width: 48%;
+            display: inline-block;
+        }
+
+        .wcpa_form_item.wcpa_type_text.form-control.birinci-isim_parent {
+            margin-right: 4%;
+        }
+
+        .woocommerce-order-details {
+            margin-top: 0;
+        }
+
+        .wd-gallery-btn > a {
+            box-shadow: none;
+            background: white;
+            display: block;
+            border-radius: 0;
+        }
+
+        .product-grid-item .star-rating {
+            position: absolute;
+            display: block;
+            left: 120px;
+        }
+
+        .price ins .amount {
+            color: #2e2a2a;
+            border-bottom: 2px solid #ffb3a7 !important;
+        }
+
+        .price .amount {
+            color: #2e2a2a;
+            border-bottom: 0px solid #ffb3a7;
+        }
+
+
+        @@media (min-width: 768px) {
+            .pr-left .wpb_wrapper {
+                margin-right: -5px;
+            }
+
+            .pr-right .wpb_wrapper {
+                margin-left: -5px;
+            }
+
+            h3.product-title {
+                min-height: 36px;
+            }
+
+            .shop-loop-head, .row.product-image-summary-wrap {
+                padding-top: 20px;
+            }
+        }
+
+        @@media (max-width: 374px) {
+            .product-grid-item .star-rating {
+                display: none;
+            }
+        }
+
+        @@media (min-width: 375px) and (max-width: 768px) {
+            .product-grid-item .star-rating {
+                position: absolute;
+                display: block;
+                left: 100px;
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .woodmart-slider .owl-dots {
+                display: block;
+            }
+
+            .owl-nav {
+                display: none;
+            }
+
+            h3.product-title {
+                min-height: 32px;
+            }
+
+            .ts-pro-img {
+                display: none;
+            }
+        }
+
+        @@media (max-width: 1024px) {
+            .kategori-header {
+                display: none !important;
+            }
+        }
+
+        @@media (min-width: 1025px) {
+            /*
+        .whb-general-header .woodmart-logo img {
+            max-height: 130px;
+            margin-top: 50px;
+            border: 6px solid white;
+            border-radius: 130px;
+            padding: 0;
+        }
+        */
+
+            .site-content.shop-content-area.col-12.breadcrumbs-location-summary.content-with-products {
+                margin-top: -40px;
+            }
+        }
+
+        @@media (max-width: 1024px) {
+            /*.whb-general-header .woodmart-logo img {
+            max-height: 115px;
+            margin-top: 50px;
+            border: 5px solid white;
+            border-radius: 115px;
+            padding: 0;
+        }
+        */
+        }
+    </style>
     <style>
     </style>
     <noscript>
@@ -1266,107 +1277,7 @@ p.woocommerce-verification-required {
                                     Gösterilen sonuç sayısı: 16
                                 </p>
                             </div>
-                            <div class="woodmart-shop-tools">
-                                <div class="woodmart-show-sidebar-btn">
-                                    <span class="woodmart-side-bar-icon"></span>
-                                    <span>Filtreyi Göster</span>
-                                </div>
-                                <div class="woodmart-products-shop-view products-view-grid">
 
-
-                                    <a rel="nofollow" href="../planners/ajandalar-ve-planlayicilar/index8098.html?per_row=4&amp;shop_view=grid" class="per-row-4 shop-view current-variation">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-<rect width="4" height="4" />
-<rect x="5" width="4" height="4" />
-<rect x="10" width="4" height="4" />
-<rect x="15" width="4" height="4" />
-<rect y="5" width="4" height="4" />
-<rect x="5" y="5" width="4" height="4" />
-<rect x="10" y="5" width="4" height="4" />
-<rect x="15" y="5" width="4" height="4" />
-<rect y="15" width="4" height="4" />
-<rect x="5" y="15" width="4" height="4" />
-<rect x="10" y="15" width="4" height="4" />
-<rect x="15" y="15" width="4" height="4" />
-<rect y="10" width="4" height="4" />
-<rect x="5" y="10" width="4" height="4" />
-<rect x="10" y="10" width="4" height="4" />
-<rect x="15" y="10" width="4" height="4" />
-</svg>
-                                    </a>
-
-
-                                    <a rel="nofollow" href="../planners/ajandalar-ve-planlayicilar/indexc9c7.html?per_row=5&amp;shop_view=grid" class="per-row-5 shop-view ">
-                                        <svg version="1.1" id="b12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             width="24px" height="19px" viewBox="0 0 24 19" enable-background="new 0 0 24 19" xml:space="preserve">
-<rect width="4" height="4" />
-<rect x="5" width="4" height="4" />
-<rect x="10" width="4" height="4" />
-<rect x="15" width="4" height="4" />
-<rect x="20" width="4" height="4" />
-<rect y="5" width="4" height="4" />
-<rect x="5" y="5" width="4" height="4" />
-<rect x="10" y="5" width="4" height="4" />
-<rect x="15" y="5" width="4" height="4" />
-<rect x="20" y="5" width="4" height="4" />
-<rect y="10" width="4" height="4" />
-<rect x="5" y="10" width="4" height="4" />
-<rect x="10" y="10" width="4" height="4" />
-<rect x="15" y="10" width="4" height="4" />
-<rect x="20" y="10" width="4" height="4" />
-<rect y="15" width="4" height="4" />
-<rect x="5" y="15" width="4" height="4" />
-<rect x="10" y="15" width="4" height="4" />
-<rect x="15" y="15" width="4" height="4" />
-<rect x="20" y="15" width="4" height="4" />
-</svg>
-                                    </a>
-
-
-                                    <a rel="nofollow" href="../planners/ajandalar-ve-planlayicilar/index7a5b.html?per_row=6&amp;shop_view=grid" class="per-row-6 shop-view ">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             width="23px" height="19px" viewBox="0 0 23 19" enable-background="new 0 0 23 19" xml:space="preserve">
-<rect width="3" height="4" />
-<rect x="4" width="3" height="4" />
-<rect x="8" width="3" height="4" />
-<rect x="12" width="3" height="4" />
-<rect x="16" width="3" height="4" />
-<rect x="20" width="3" height="4" />
-<rect y="5" width="3" height="4" />
-<rect x="4" y="5" width="3" height="4" />
-<rect x="8" y="5" width="3" height="4" />
-<rect x="12" y="5" width="3" height="4" />
-<rect x="16" y="5" width="3" height="4" />
-<rect x="20" y="5" width="3" height="4" />
-<rect y="10" width="3" height="4" />
-<rect x="4" y="10" width="3" height="4" />
-<rect x="8" y="10" width="3" height="4" />
-<rect x="12" y="10" width="3" height="4" />
-<rect x="16" y="10" width="3" height="4" />
-<rect x="20" y="10" width="3" height="4" />
-<rect y="15" width="3" height="4" />
-<rect x="4" y="15" width="3" height="4" />
-<rect x="8" y="15" width="3" height="4" />
-<rect x="12" y="15" width="3" height="4" />
-<rect x="16" y="15" width="3" height="4" />
-<rect x="20" y="15" width="3" height="4" />
-</svg>
-                                    </a>
-
-
-                                </div>
-                                <form class="woocommerce-ordering" method="get">
-                                    <select name="orderby" class="orderby" aria-label="Sipariş">
-                                        <option value="menu_order" selected='selected'>Varsayılan Sıralama</option>
-                                        <option value="popularity">En çok incelenene göre sırala</option>
-                                        <option value="rating">En çok oy alana göre sırala</option>
-                                        <option value="date">En yeniye göre sırala</option>
-                                        <option value="price">Fiyata göre sırala: Düşükten yükseğe</option>
-                                        <option value="price-desc">Fiyata göre sırala: Yüksekten düşüğe</option>
-                                    </select>
-                                </form>
-                            </div>
                         </div>
 
 
@@ -1378,597 +1289,59 @@ p.woocommerce-verification-required {
 
 
                         <div class="products elements-grid align-items-start woodmart-products-holder  woodmart-spacing-30 pagination-pagination title-line-two row grid-columns-4" data-source="main_loop" data-min_price="" data-max_price="">
+                            @foreach (Product product in Model)
+                                {
+
+                                <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 first  type-product post-11269 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="1" data-id="11269">
 
 
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 first  type-product post-11269 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="1" data-id="11269">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/renkli-noktali-suresiz-ajanda/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-15%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-kapak-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Renkli Noktalı Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-2-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/renkli-noktali-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Just A Girl Boss Building Her Empire 2021 Ajandası – Aylık Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
+                                    <div class="product-element-top">
+                                        <a href="../../urun/renkli-noktali-suresiz-ajanda/index.html" class="product-image-link">
+                                            <div class="product-labels labels-rectangular"><span class="onsale product-label">-15%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-kapak-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Renkli Noktalı Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-2-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
                                         </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index7f7c.html?add-to-cart=11269" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="11269" data-product_sku="262974" aria-label="&ldquo;Renkli Noktalı Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="11269">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[11269] = { "id": "11269", "sku": "262974", "price": 109.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "11269", "sku": "262974", "gpf": "woocommerce_gpf_11269", "gla": "gla_11269" }, "isVariable": false, "name": "Renkli Noktalı Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[11269]['position'] = window.wpmDataLayer.position++</script>
+                                        <div class="hover-img">
+                                            <a href="../../urun/renkli-noktali-suresiz-ajanda/index.html">
+                                                <img width="600" height="781" src="~/assets/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Just A Girl Boss Building Her Empire 2021 Ajandası – Aylık Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
+                                            </a>
+                                        </div>
+                                        <div class="wrapp-buttons">
+                                            <div class="woodmart-buttons">
+                                                <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
+                                                    <a href="index7f7c.html?add-to-cart=11269" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="11269" data-product_sku="262974" aria-label="&ldquo;Renkli Noktalı Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="11269">
+                                                    <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
+                                                        window.wpmDataLayer.products[11269] = { "id": "11269", "sku": "262974", "price": 109.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "11269", "sku": "262974", "gpf": "woocommerce_gpf_11269", "gla": "gla_11269" }, "isVariable": false, "name": "Renkli Noktalı Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
+                                                        window.wpmDataLayer.products[11269]['position'] = window.wpmDataLayer.position++</script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="quick-shop-wrapper">
+                                            <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
+                                            <div class="quick-shop-form">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/renkli-noktali-suresiz-ajanda/index.html">Renkli Noktalı Süresiz Ajanda</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>129.90</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>109.90</bdi></span></ins></span>
+                                    <h3 class="product-title"><a href="../../urun/renkli-noktali-suresiz-ajanda/index.html">Renkli Noktalı Süresiz Ajanda</a></h3>
+                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>129.90</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>109.90</bdi></span></ins></span>
 
+
+                                </div>
+
+
+                                }
 
                             </div>
 
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-11253 status-publish instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="2" data-id="11253">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/el-cizimi-pembe-cicekli-suresiz-ajanda/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-15%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-kapak-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="El Çizimi Pembe Çiçekli Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/el-cizimi-pembe-cicekli-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Just A Girl Boss Building Her Empire 2021 Ajandası – Aylık Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/09/just-a-girl-boss-2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index9318.html?add-to-cart=11253" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="11253" data-product_sku="2984" aria-label="&ldquo;El Çizimi Pembe Çiçekli Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="11253">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[11253] = { "id": "11253", "sku": "2984", "price": 109.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "11253", "sku": "2984", "gpf": "woocommerce_gpf_11253", "gla": "gla_11253" }, "isVariable": false, "name": "El Çizimi Pembe Çiçekli Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[11253]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/el-cizimi-pembe-cicekli-suresiz-ajanda/index.html">El Çizimi Pembe Çiçekli Süresiz Ajanda</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>129.90</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>109.90</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-11263 status-publish last instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="3" data-id="11263">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/pembe-mor-cicekli-suresiz-ajanda/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-15%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-kapak-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pembe Mor Çiçekli Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-1-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/pembe-mor-cicekli-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-ic3-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-ic3-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-ic3-1-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="indexdf82.html?add-to-cart=11263" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="11263" data-product_sku="929739" aria-label="&ldquo;Pembe Mor Çiçekli Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="11263">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[11263] = { "id": "11263", "sku": "929739", "price": 109.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "11263", "sku": "929739", "gpf": "woocommerce_gpf_11263", "gla": "gla_11263" }, "isVariable": false, "name": "Pembe Mor Çiçekli Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[11263]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/pembe-mor-cicekli-suresiz-ajanda/index.html">Pembe Mor Çiçekli Süresiz Ajanda</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>129.90</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>109.90</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 last  type-product post-5883 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-bloknotlar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="4" data-id="5883">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/papatya-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-20%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Papatya Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/papatya-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Papatya Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/papatya-yapilacaklar-listesi-1.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index23c4.html?add-to-cart=5883" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="5883" data-product_sku="8682729400464" aria-label="&ldquo;Papatya Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="5883">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[5883] = { "id": "5883", "sku": "8682729400464", "price": 36.8, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "5883", "sku": "8682729400464", "gpf": "woocommerce_gpf_5883", "gla": "gla_5883" }, "isVariable": false, "name": "Papatya Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti", "category": ["Ajandalar ve Planlayıcılar", "Bloknotlar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[5883]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/papatya-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">Papatya Yapılacaklar Listesi, Market Listesi &#8211; 3’lü Bloknot Seti</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>46.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>36.80</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 first  type-product post-5875 status-publish instock product_cat-ajandalar-ve-planlayicilar product_cat-bloknotlar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="5" data-id="5875">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/mini-cicekli-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-20%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Mini Çiçekli Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/mini-cicekli-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Mini Çiçekli Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/mini-cicekli-yapilacaklar-listesi-1.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index9ad9.html?add-to-cart=5875" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="5875" data-product_sku="8682729400495" aria-label="&ldquo;Mini Çiçekli Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="5875">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[5875] = { "id": "5875", "sku": "8682729400495", "price": 40.8, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "5875", "sku": "8682729400495", "gpf": "woocommerce_gpf_5875", "gla": "gla_5875" }, "isVariable": false, "name": "Mini Çiçekli Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti", "category": ["Ajandalar ve Planlayıcılar", "Bloknotlar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[5875]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/mini-cicekli-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">Mini Çiçekli Yapılacaklar Listesi, Market Listesi &#8211; 3’lü Bloknot Seti</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>51.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>40.80</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-5870 status-publish last instock product_cat-ajandalar-ve-planlayicilar product_cat-bloknotlar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="6" data-id="5870">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/geometrik-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-20%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Geometrik Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/geometrik-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Geometrik Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2020/08/geometrik-yapilacaklar-listesi-2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index7324.html?add-to-cart=5870" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="5870" data-product_sku="8682729400471" aria-label="&ldquo;Geometrik Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="5870">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[5870] = { "id": "5870", "sku": "8682729400471", "price": 40.8, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "5870", "sku": "8682729400471", "gpf": "woocommerce_gpf_5870", "gla": "gla_5870" }, "isVariable": false, "name": "Geometrik Yapılacaklar Listesi, Market Listesi - 3’lü Bloknot Seti", "category": ["Ajandalar ve Planlayıcılar", "Bloknotlar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[5870]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/geometrik-yapilacaklar-listesi-market-listesi-3lu-bloknot-seti/index.html">Geometrik Yapılacaklar Listesi, Market Listesi &#8211; 3’lü Bloknot Seti</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>51.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>40.80</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-10783 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail shipping-taxable purchasable product-type-simple" data-loop="7" data-id="10783">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/one-line-a-day-floral-5-yillik-suresiz-ajanda/index.html" class="product-image-link">
-                                        <img width="600" height="781" src="~/assets/wp-content/uploads/2021/01/9786058072015_1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="One Line A Day Floral – 5 Yıllık Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/01/9786058072015_1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/01/9786058072015_1-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/one-line-a-day-floral-5-yillik-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/one-line-a-day-inside-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Süresiz Ajanda İç Sayfa Tasarımı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index3977.html?add-to-cart=10783" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="10783" data-product_sku="9786058072015" aria-label="&ldquo;One Line A Day Floral – 5 Yıllık Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="10783">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[10783] = { "id": "10783", "sku": "9786058072015", "price": 179.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "10783", "sku": "9786058072015", "gpf": "woocommerce_gpf_10783", "gla": "gla_10783" }, "isVariable": false, "name": "One Line A Day Floral – 5 Yıllık Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[10783]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/one-line-a-day-floral-5-yillik-suresiz-ajanda/index.html">One Line A Day Floral – 5 Yıllık Süresiz Ajanda</a></h3><div class="star-rating" role="img" aria-label="5 üzerinden 5.00 oy aldı"><span style="width:100%">5 üzerinden <strong class="rating">5.00</strong> oy aldı</span></div>
-                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>179.90</bdi></span></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item product woodmart-hover-icons  col-md-3 col-sm-4 col-6 last  type-product post-3294 status-publish instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail shipping-taxable purchasable product-type-simple" data-loop="8" data-id="3294">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/one-line-a-day-botanic-garden-5-yillik-suresiz-ajanda/index.html" class="product-image-link">
-                                        <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/one-line-a-day-botanic-garden-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="One Line a Day Botanic Garden - 5 Yıllık Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-botanic-garden-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-botanic-garden-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-botanic-garden-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-botanic-garden-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-botanic-garden.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/one-line-a-day-botanic-garden-5-yillik-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/one-line-a-day-inside-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Süresiz Ajanda İç Sayfa Tasarımı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/one-line-a-day-inside-1.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="indexdfcc.html?add-to-cart=3294" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="3294" data-product_sku="8682376185240" aria-label="&ldquo;One Line a Day Botanic Garden - 5 Yıllık Süresiz Ajanda&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="3294">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[3294] = { "id": "3294", "sku": "8682376185240", "price": 179.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "3294", "sku": "8682376185240", "gpf": "woocommerce_gpf_3294", "gla": "gla_3294" }, "isVariable": false, "name": "One Line a Day Botanic Garden - 5 Yıllık Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[3294]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/one-line-a-day-botanic-garden-5-yillik-suresiz-ajanda/index.html">One Line a Day Botanic Garden &#8211; 5 Yıllık Süresiz Ajanda</a></h3><div class="star-rating" role="img" aria-label="5 üzerinden 4.67 oy aldı"><span style="width:93.4%">5 üzerinden <strong class="rating">4.67</strong> oy aldı</span></div>
-                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>179.90</bdi></span></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 first  type-product post-3417 status-publish last instock product_cat-ajandalar-ve-planlayicilar product_cat-planners has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="9" data-id="3417">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/white-weekly-planner/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-19%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/white-weekly-planner-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="White Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/white-weekly-planner-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/white-weekly-planner-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/white-weekly-planner-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/white-weekly-planner-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/white-weekly-planner.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/white-weekly-planner/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index52cc.html?add-to-cart=3417" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="3417" data-product_sku="9786059219648" aria-label="&ldquo;White Weekly Planner&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="3417">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[3417] = { "id": "3417", "sku": "9786059219648", "price": 65, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "3417", "sku": "9786059219648", "gpf": "woocommerce_gpf_3417", "gla": "gla_3417" }, "isVariable": false, "name": "White Weekly Planner", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar"], "isVariation": false };
-                                                    window.wpmDataLayer.products[3417]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/white-weekly-planner/index.html">White Weekly Planner</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>80.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>65.00</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-3411 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-planners has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="10" data-id="3411">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/pink-weekly-planner/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-19%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/pink-weekly-planner-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pink Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/pink-weekly-planner-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/pink-weekly-planner-1-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/pink-weekly-planner-1-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/pink-weekly-planner-1-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/pink-weekly-planner-1.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/pink-weekly-planner/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index3e6f.html?add-to-cart=3411" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="3411" data-product_sku="9786059219655" aria-label="&ldquo;Pink Weekly Planner&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="3411">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[3411] = { "id": "3411", "sku": "9786059219655", "price": 65, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "3411", "sku": "9786059219655", "gpf": "woocommerce_gpf_3411", "gla": "gla_3411" }, "isVariable": false, "name": "Pink Weekly Planner", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar"], "isVariation": false };
-                                                    window.wpmDataLayer.products[3411]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/pink-weekly-planner/index.html">Pink Weekly Planner</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>80.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>65.00</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-3371 status-publish instock product_cat-ajandalar-ve-planlayicilar product_cat-planners has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="11" data-id="3371">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/blue-weekly-planner/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-19%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/blue-weekly-planner-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Blue Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/blue-weekly-planner-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/blue-weekly-planner-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/blue-weekly-planner-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/blue-weekly-planner-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/blue-weekly-planner.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/blue-weekly-planner/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Weekly Planner" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/weekly-planner-inside.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index49d1.html?add-to-cart=3371" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="3371" data-product_sku="9786059219662" aria-label="&ldquo;Blue Weekly Planner&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="3371">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[3371] = { "id": "3371", "sku": "9786059219662", "price": 65, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "3371", "sku": "9786059219662", "gpf": "woocommerce_gpf_3371", "gla": "gla_3371" }, "isVariable": false, "name": "Blue Weekly Planner", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar"], "isVariation": false };
-                                                    window.wpmDataLayer.products[3371]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/blue-weekly-planner/index.html">Blue Weekly Planner</a></h3>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>80.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>65.00</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 last  type-product post-8033 status-publish last instock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="12" data-id="8033">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/rose-suresiz-planlayici-undated-planner/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-15%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/11/001-4-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Rose Süresiz Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/11/001-4-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/11/001-4-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/rose-suresiz-planlayici-undated-planner/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/11/003-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Big Plans Inside Süresiz Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/11/003-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/11/003-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="indexa2f3.html?add-to-cart=8033" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="8033" data-product_sku="8682729400624" aria-label="&ldquo;Rose Süresiz Planlayıcı - Undated Planner&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="8033">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[8033] = { "id": "8033", "sku": "8682729400624", "price": 109.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "8033", "sku": "8682729400624", "gpf": "woocommerce_gpf_8033", "gla": "gla_8033" }, "isVariable": false, "name": "Rose Süresiz Planlayıcı - Undated Planner", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[8033]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/rose-suresiz-planlayici-undated-planner/index.html">Rose Süresiz Planlayıcı &#8211; Undated Planner</a></h3><div class="star-rating" role="img" aria-label="5 üzerinden 5.00 oy aldı"><span style="width:100%">5 üzerinden <strong class="rating">5.00</strong> oy aldı</span></div>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>129.90</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>109.90</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 first  type-product post-3360 status-publish first instock product_cat-ajandalar-ve-planlayicilar product_cat-bloknotlar product_cat-planners has-post-thumbnail sale shipping-taxable purchasable product-type-simple" data-loop="13" data-id="3360">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/gunluk-ders-planlayici-bloknot/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="onsale product-label">-20%</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Günlük Ders Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot-231x300.jpg 231w, https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot-768x999.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-bloknot.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/gunluk-ders-planlayici-bloknot/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/04/gunluk-ders-planlayici-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Günlük Ders Planlayıcı Bloknot" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-600x781.jpeg 600w, https://fabooks.com.tr/wp-content/uploads/2020/04/gunluk-ders-planlayici-1200x1562.jpeg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="index59d0.html?add-to-cart=3360" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart add-to-cart-loop" data-product_id="3360" data-product_sku="9786059219631" aria-label="&ldquo;Günlük Ders Planlayıcı Bloknot&rdquo; ürününü sepete ekle" rel="nofollow"><span>Sepete Ekle</span></a>			<input type="hidden" class="wpmProductId" data-id="3360">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[3360] = { "id": "3360", "sku": "9786059219631", "price": 32, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "3360", "sku": "9786059219631", "gpf": "woocommerce_gpf_3360", "gla": "gla_3360" }, "isVariable": false, "name": "Günlük Ders Planlayıcı Bloknot", "category": ["Ajandalar ve Planlayıcılar", "Bloknotlar", "Planlayıcılar"], "isVariation": false };
-                                                    window.wpmDataLayer.products[3360]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/gunluk-ders-planlayici-bloknot/index.html">Günlük Ders Planlayıcı Bloknot</a></h3><div class="star-rating" role="img" aria-label="5 üzerinden 5.00 oy aldı"><span style="width:100%">5 üzerinden <strong class="rating">5.00</strong> oy aldı</span></div>
-                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>40.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>32.00</bdi></span></ins></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-11271 status-publish outofstock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail shipping-taxable purchasable product-type-simple" data-loop="14" data-id="11271">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/pembe-puantiye-suresiz-ajanda/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="out-of-stock product-label">Tükendi</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-kapak-3-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pembe Puantiye Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-3-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-kapak-3-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/pembe-puantiye-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2021/03/trendyol-ic3-1-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-ic3-1-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/03/trendyol-ic3-1-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="../../urun/pembe-puantiye-suresiz-ajanda/index.html" data-quantity="1" class="button wp-element-button product_type_simple add-to-cart-loop" data-product_id="11271" data-product_sku="156213" aria-label="&ldquo;Pembe Puantiye Süresiz Ajanda&rdquo; hakkında daha fazla bilgi edinin" rel="nofollow"><span>Devamını oku</span></a>			<input type="hidden" class="wpmProductId" data-id="11271">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[11271] = { "id": "11271", "sku": "156213", "price": 79.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "11271", "sku": "156213", "gpf": "woocommerce_gpf_11271", "gla": "gla_11271" }, "isVariable": false, "name": "Pembe Puantiye Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[11271]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/pembe-puantiye-suresiz-ajanda/index.html">Pembe Puantiye Süresiz Ajanda</a></h3>
-                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>79.90</bdi></span></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 type-product post-10723 status-publish last outofstock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail shipping-taxable purchasable product-type-simple" data-loop="15" data-id="10723">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/one-line-a-day-flowery-5-yillik-suresiz-ajanda/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="out-of-stock product-label">Tükendi</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2021/01/website-kapak2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="One Line A Day - Flowery 5 Yıllık Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-kapak2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/one-line-a-day-flowery-5-yillik-suresiz-ajanda/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2021/01/website-mock2-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="One Line A Day - Flowery 5 Yıllık Süresiz Ajanda" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2-230x300.jpg 230w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2-787x1024.jpg 787w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2-768x1000.jpg 768w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2-1180x1536.jpg 1180w, https://fabooks.com.tr/wp-content/uploads/2021/01/website-mock2.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="../../urun/one-line-a-day-flowery-5-yillik-suresiz-ajanda/index.html" data-quantity="1" class="button wp-element-button product_type_simple add-to-cart-loop" data-product_id="10723" data-product_sku="8682729400990" aria-label="&ldquo;One Line A Day - Flowery  5 Yıllık Süresiz Ajanda&rdquo; hakkında daha fazla bilgi edinin" rel="nofollow"><span>Devamını oku</span></a>			<input type="hidden" class="wpmProductId" data-id="10723">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[10723] = { "id": "10723", "sku": "8682729400990", "price": 179.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "10723", "sku": "8682729400990", "gpf": "woocommerce_gpf_10723", "gla": "gla_10723" }, "isVariable": false, "name": "One Line A Day - Flowery  5 Yıllık Süresiz Ajanda", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[10723]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/one-line-a-day-flowery-5-yillik-suresiz-ajanda/index.html">One Line A Day &#8211; Flowery  5 Yıllık Süresiz Ajanda</a></h3>
-                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>179.90</bdi></span></span>
-
-
-                            </div>
-
-
-
-                            <div class="product-grid-item wd-with-labels product woodmart-hover-icons  col-md-3 col-sm-4 col-6 last  type-product post-7960 status-publish first outofstock product_cat-ajandalar-ve-planlayicilar product_cat-planners product_cat-yeni has-post-thumbnail shipping-taxable purchasable product-type-simple" data-loop="16" data-id="7960">
-
-
-                                <div class="product-element-top">
-                                    <a href="../../urun/big-plans-inside-suresiz-planlayici-undated-planner/index.html" class="product-image-link">
-                                        <div class="product-labels labels-rectangular"><span class="out-of-stock product-label">Tükendi</span></div><img width="600" height="781" src="~/assets/wp-content/uploads/2020/11/001-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Big Plans Inside Süresiz Planlayıcı" decoding="async" loading="lazy" />
-                                    </a>
-                                    <div class="hover-img">
-                                        <a href="../../urun/big-plans-inside-suresiz-planlayici-undated-planner/index.html">
-                                            <img width="600" height="781" src="~/assets/wp-content/uploads/2020/11/003-600x781.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Big Plans Inside Süresiz Planlayıcı" decoding="async" loading="lazy" srcset="https://fabooks.com.tr/wp-content/uploads/2020/11/003-600x781.jpg 600w, https://fabooks.com.tr/wp-content/uploads/2020/11/003-1200x1562.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" />
-                                        </a>
-                                    </div>
-                                    <div class="wrapp-buttons">
-                                        <div class="woodmart-buttons">
-                                            <div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn">
-                                                <a href="../../urun/big-plans-inside-suresiz-planlayici-undated-planner/index.html" data-quantity="1" class="button wp-element-button product_type_simple add-to-cart-loop" data-product_id="7960" data-product_sku="8682729400655" aria-label="&ldquo;Big Plans Inside Süresiz Planlayıcı - Undated Planner&rdquo; hakkında daha fazla bilgi edinin" rel="nofollow"><span>Devamını oku</span></a>			<input type="hidden" class="wpmProductId" data-id="7960">
-                                                <script>(window.wpmDataLayer = window.wpmDataLayer || {}).products = window.wpmDataLayer.products || {}
-                                                    window.wpmDataLayer.products[7960] = { "id": "7960", "sku": "8682729400655", "price": 79.9, "brand": "", "quantity": 1, "dyn_r_ids": { "post_id": "7960", "sku": "8682729400655", "gpf": "woocommerce_gpf_7960", "gla": "gla_7960" }, "isVariable": false, "name": "Big Plans Inside Süresiz Planlayıcı - Undated Planner", "category": ["Ajandalar ve Planlayıcılar", "Planlayıcılar", "Yeni"], "isVariation": false };
-                                                    window.wpmDataLayer.products[7960]['position'] = window.wpmDataLayer.position++</script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="quick-shop-wrapper">
-                                        <div class="quick-shop-close wd-cross-button wd-size-s wd-with-text-left"><span>Kapat</span></div>
-                                        <div class="quick-shop-form">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="product-title"><a href="../../urun/big-plans-inside-suresiz-planlayici-undated-planner/index.html">Big Plans Inside Süresiz Planlayıcı &#8211; Undated Planner</a></h3><div class="star-rating" role="img" aria-label="5 üzerinden 5.00 oy aldı"><span style="width:100%">5 üzerinden <strong class="rating">5.00</strong> oy aldı</span></div>
-                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#8378;</span>79.90</bdi></span></span>
-
-
-                            </div>
-
-
+                        
 
                         </div>
 
+                    </div><!-- .main-page-wrapper -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
 
+        </div> <!-- end wrapper -->
 
-                    </div>
-
-                </div><!-- .main-page-wrapper -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-       
-    </div> <!-- end wrapper -->
-   
-</body>
+    </body>
 
 </html>
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities.Account;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WebMVC.ViewModels.Account;
 
@@ -6,17 +7,17 @@ namespace WebMVC.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager)
+
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
-
 
         public IActionResult Register()
         {
@@ -24,45 +25,51 @@ namespace WebMVC.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterVM register)
+        public async Task<IActionResult> Register(RegisterVM registerVM)
         {
-            if (!ModelState.IsValid) return View(register);
-            IdentityUser identityUser = new IdentityUser()
+            if (!ModelState.IsValid) return View(registerVM);
+            AppUser newUser = new AppUser()
             {
-                Email = register.Email
+                Email = registerVM.Email,
             };
-            var registerResult = await _userManager.CreateAsync(identityUser, register.Password);
+            IdentityResult registerResult = await _userManager.CreateAsync(newUser, registerVM.Password);
             if (!registerResult.Succeeded)
             {
-                foreach (var error in registerResult.Errors)
-                {
+                foreach (IdentityError error in registerResult.Errors)
                     ModelState.AddModelError("", error.Description);
-                }
-                return View(register);
+                return View(registerVM);
+            }
+            IdentityResult roleResult = await _userManager.AddToRoleAsync(newUser, UserRoles.User.ToString());
+            if (!roleResult.Succeeded)
+            {
+                foreach (IdentityError error in roleResult.Errors)
+                    ModelState.AddModelError("", error.Description);
+                return View(registerVM);
+
             }
             return RedirectToAction(nameof(Login));
         }
-
         public IActionResult Login()
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginVM login, string? ReturnUrl)
         {
             if (!ModelState.IsValid) return View(login);
-            IdentityUser user = await _userManager.FindByEmailAsync(login.Email);
+            AppUser user = await _userManager.FindByEmailAsync(login.Email);
             if (user == null)
             {
-                ModelState.AddModelError("", "Email or password wrong");
+                ModelState.AddModelError("", "Email or Password is wrong!");
                 return View(login);
             }
-            var sigingResult = await _signInManager.CheckPasswordSignInAsync(user, login.Password, true);
-            if (!sigingResult.Succeeded)
+            Microsoft.AspNetCore.Identity.SignInResult signinResult =
+                await _signInManager.CheckPasswordSignInAsync(user, login.Password, false);
+
+            if (!signinResult.Succeeded)
             {
-                ModelState.AddModelError("", "Email or password wrong");
+                ModelState.AddModelError("", "Email or Password is wrong!");
                 return View(login);
             }
             await _signInManager.SignInAsync(user, login.RememberMe);
@@ -73,6 +80,7 @@ namespace WebMVC.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
         public async Task<IActionResult> LogOut()
         {
             await _signInManager.SignOutAsync();
@@ -90,6 +98,11 @@ namespace WebMVC.Controllers
             return Json("OK");
         }
         public IActionResult AccessDenied(string? ReturnUrl)
+        {
+            return View();
+        }
+
+        public IActionResult LostPassword()
         {
             return View();
         }

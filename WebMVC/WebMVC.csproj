@@ -13,6 +13,9 @@
     <ProjectReference Include="..\Entities\Entities.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +43,7 @@
     <None Remove="ViewModels\Basket\" />
     <None Remove="ViewModels\Account\" />
     <None Remove="Views\Basket\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MusteriHizmetleri\" />
@@ -59,6 +63,7 @@
     <Folder Include="ViewModels\Basket\" />
     <Folder Include="ViewModels\Account\" />
     <Folder Include="Views\Basket\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />

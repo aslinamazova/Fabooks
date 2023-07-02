@@ -1,4 +1,6 @@
-﻿namespace Business.Services.Concrete;
+﻿using Microsoft.AspNetCore.Http;
+
+namespace Business.Services.Concrete;
 
 public class ProductService : IProductService
 {
@@ -75,4 +77,7 @@ public class ProductService : IProductService
         }
         return new SuccessResult("Product Updated");
     }
+
+    
+    
 }

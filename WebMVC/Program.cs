@@ -1,11 +1,20 @@
-﻿using DataAccess;
-
+﻿using System.Reflection;
+using Business.Services;
+using Business.Services.Abstract;
+using Business.Services.Concrete;
+using DataAccess;
+using Entities.Account;
+using Microsoft.AspNetCore.Identity;
+using Business;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<LayoutService>();
 builder.Services.AddDataAccessConfiguration(builder.Configuration);
+builder.Services.AddBusinessConfiguration();
+
 
 var app = builder.Build();
 
@@ -21,7 +30,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>

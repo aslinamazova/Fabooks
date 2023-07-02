@@ -1,4 +1,6 @@
-﻿namespace Entities.Dtos.Products;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+namespace Entities.Dtos.Products;
 
 public class ProductCreateDto
 {
@@ -10,6 +12,9 @@ public class ProductCreateDto
     public Category? Category { get; set; }
     public decimal? DiscountPercent { get; set; }
     public decimal? DiscountedPrice { get; set; }
+    [ValidateNever]
+    public List<Category> Categories { get; set; }
+    public List<IFormFile> Images { get; set; }
 
 }
 

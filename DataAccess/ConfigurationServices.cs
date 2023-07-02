@@ -8,11 +8,14 @@ public static  class ConfigurationServices
         {
             opt.UseSqlServer(configuration.GetConnectionString("Default"));
         });
+
         services.AddIdentity<AppUser, IdentityRole>()
           .AddDefaultTokenProviders()
           .AddEntityFrameworkStores<AppDbContext>();
+        services.AddScoped<UserManager<AppUser>>();
+        services.AddScoped<SignInManager<AppUser>>();
         services.AddScoped<IProductRepository, ProductRepository>();
-
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
         return services;
     }
 

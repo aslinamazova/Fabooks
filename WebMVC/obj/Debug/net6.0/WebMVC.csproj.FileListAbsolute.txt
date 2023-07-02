@@ -77,3 +77,16 @@
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/ref/WebMVC.dll
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/AutoMapper.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Business.dll
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/bin/Debug/net6.0/Business.pdb
+/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/Debug/net6.0/WebMVC.MvcApplicationPartsAssemblyInfo.cs

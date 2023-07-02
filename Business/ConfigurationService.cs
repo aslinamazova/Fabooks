@@ -6,6 +6,8 @@ public static class ConfigurationService
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddScoped<IProductService, ProductService>();
+      
+        services.AddScoped<ICategoryService, CategoryService>();
         return services;
     }
 }

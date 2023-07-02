@@ -1,4 +1,4 @@
-﻿@*@model CreateProductVM
+﻿@model ProductCreateDto
 
 <div class="container-fluid pt-2 px-4">
     <div class="row g-4">
@@ -24,15 +24,6 @@
                         <input asp-for="Stock" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" asp-for="CompanyId"></label>
-                        <select class="form-select" asp-for="CompanyId">
-                            @foreach (var company in Model.Companies)
-                            {
-                                <option value="@company.Id">@company.Name</option>
-                            }
-                        </select>
-                    </div>
-                    <div class="mb-3">
                         <label class="form-label" asp-for="CategoryId"></label>
                         <select class="form-select" asp-for="CategoryId">
                             @foreach (var category in Model.Categories)
@@ -52,5 +43,5 @@
         <div class="col-xl-3"></div>
 
     </div>
-</div>*@
+</div>
 

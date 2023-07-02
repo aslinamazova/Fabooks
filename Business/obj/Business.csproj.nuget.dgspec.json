@@ -35,9 +35,6 @@
               },
               "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj": {
                 "projectPath": "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj"
-              },
-              "/Users/eslinamazova/Desktop/Fabooks/WebMVC/WebMVC.csproj": {
-                "projectPath": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/WebMVC.csproj"
               }
             }
           }
@@ -259,6 +256,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[6.0.16, )"
@@ -276,87 +277,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/eslinamazova/Desktop/Fabooks/WebMVC/WebMVC.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/WebMVC.csproj",
-        "projectName": "WebMVC",
-        "projectPath": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/WebMVC.csproj",
-        "packagesPath": "/Users/eslinamazova/.nuget/packages/",
-        "outputPath": "/Users/eslinamazova/Desktop/Fabooks/WebMVC/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/eslinamazova/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj": {
-                "projectPath": "/Users/eslinamazova/Desktop/Fabooks/DataAccess/DataAccess.csproj"
-              },
-              "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj": {
-                "projectPath": "/Users/eslinamazova/Desktop/Fabooks/Entities/Entities.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.16, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
